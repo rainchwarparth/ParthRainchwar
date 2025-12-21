@@ -70,6 +70,14 @@ export default {
           text: "hsl(var(--researcher-text))",
           "text-muted": "hsl(var(--researcher-text-muted))",
         },
+        "human-axis": {
+          DEFAULT: "hsl(var(--human-axis))",
+          surface: "hsl(var(--human-axis-surface))",
+          accent: "hsl(var(--human-axis-accent))",
+          text: "hsl(var(--human-axis-text))",
+          "text-muted": "hsl(var(--human-axis-text-muted))",
+          border: "hsl(var(--human-axis-border))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

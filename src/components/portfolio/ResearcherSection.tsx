@@ -1,54 +1,66 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, FileText, BookOpen, Lightbulb, ExternalLink, GraduationCap } from "lucide-react";
+import { ArrowLeft, FileText, Lightbulb, ExternalLink, GraduationCap, Sparkles, BookOpen } from "lucide-react";
 
 interface ResearcherSectionProps {
   onBack: () => void;
 }
 
-const publications = [
+const researchChronicle = [
   {
+    storyTitle: "The Quest for Digital Trust",
     title: "Optimal Face Recognition System using Haar Classifier",
     publisher: "IEEE",
     year: "2023",
-    hypothesis: "Hybrid authentication combining facial recognition with behavioral biometrics can achieve superior accuracy and security for smart voting systems compared to single-modality approaches.",
-    methodology: "Implemented cascaded Haar classifiers with real-time mask detection, integrating multiple authentication layers including liveness detection and behavioral pattern analysis across 1,000+ test subjects.",
-    outcome: "99% accuracy in mask detection • 97.3% facial recognition accuracy • Successfully deployed in pilot smart voting implementation",
+    hypothesis: "Hybrid authentication combining facial recognition with behavioral biometrics can achieve superior accuracy for smart voting systems.",
+    methodology: "Implemented cascaded Haar classifiers with real-time mask detection, integrating multiple authentication layers across 1,000+ test subjects.",
+    outcome: {
+      metrics: ["99% mask detection", "97.3% recognition", "Pilot deployed"],
+      narrative: "Successfully demonstrated secure, accessible digital voting infrastructure."
+    },
     link: "#",
   },
   {
+    storyTitle: "The Mind-Gut Connection",
     title: "Machine Learning for Prediction of Nutritional Psychology",
     publisher: "Springer",
     year: "2023",
-    hypothesis: "Fast food consumption patterns correlate significantly with cognitive performance and psychological well-being in undergraduate student populations.",
-    methodology: "Applied Random Forest ensemble methods to analyze dietary data from 500+ students, correlating nutritional intake with cognitive assessments and psychological inventories over a 6-month longitudinal study.",
-    outcome: "Identified 12 key nutritional predictors • 84% prediction accuracy for cognitive decline indicators • Published recommendations for campus wellness programs",
+    hypothesis: "Fast food consumption patterns correlate significantly with cognitive performance in undergraduate populations.",
+    methodology: "Applied Random Forest ensemble methods analyzing dietary data from 500+ students over a 6-month longitudinal study.",
+    outcome: {
+      metrics: ["12 predictors found", "84% accuracy", "Campus impact"],
+      narrative: "Research informed campus wellness program redesign."
+    },
     link: "#",
   },
   {
+    storyTitle: "Decoding the Digital Consumer",
     title: "Internet of Behaviors (IoB): Analytical Study on Consumer Psychology",
     publisher: "CRC Press / Taylor & Francis",
     year: "2024",
-    hypothesis: "Digital behavioral traces can predict purchasing decisions with higher accuracy than traditional demographic-based consumer models.",
-    methodology: "Conducted comprehensive analysis of online behavioral data across 10,000+ consumer interactions, developing novel IoB frameworks that integrate psychological profiling with real-time behavioral monitoring.",
-    outcome: "78% prediction accuracy for purchase intent • Framework adopted by 3 e-commerce platforms • Contributed to emerging IoB ethical guidelines",
+    hypothesis: "Digital behavioral traces predict purchasing decisions with higher accuracy than demographic models.",
+    methodology: "Comprehensive analysis of 10,000+ consumer interactions, developing novel IoB frameworks integrating psychological profiling.",
+    outcome: {
+      metrics: ["78% prediction", "3 platforms adopted", "Ethics guidelines"],
+      narrative: "Framework contributed to emerging IoB ethical standards."
+    },
     link: "#",
   },
 ];
 
-const ongoingResearch = {
-  title: "Cognitive Decision-Making in Fragmented Digital Identities",
-  focus: "Modeling the 'fractured personality' phenomenon in social media environments",
-  description: "This research investigates how individuals develop and maintain multiple digital personas across platforms, and how this fragmentation affects real-world decision-making processes. Using machine learning models trained on behavioral patterns, we aim to understand human-technology emotional adaptability and its implications for mental health and authentic self-expression.",
-  themes: ["Social Media Psychology", "Identity Fragmentation", "Emotional AI", "Cognitive Modeling"],
+const futureResearch = {
+  title: "The Fractured Self in Digital Spaces",
+  subtitle: "Behavioral Astrology & The Fragmented Personality",
+  description: "My ongoing work bridges ancient pattern recognition with modern machine learning. Just as astrology sought to map celestial patterns to human behavior, I am developing models that decode the 'fractured personality'—the multiple digital personas we maintain across platforms.",
+  focus: "How do fragmented digital identities affect real-world decision-making? Can we model emotional adaptability in human-technology relationships?",
+  vision: "This research aims to create AI systems that understand not just what we do, but who we become in different digital contexts.",
+  themes: ["Social Media Psychology", "Identity Fragmentation", "Emotional AI", "Behavioral Astrology", "Cognitive Modeling"],
 };
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
+    transition: { staggerChildren: 0.2 },
   },
 };
 
@@ -73,7 +85,7 @@ const ResearcherSection = ({ onBack }: ResearcherSectionProps) => {
             className="inline-flex items-center gap-2 text-researcher-text-muted hover:text-researcher-accent transition-colors font-serif text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Split View
+            Return to Hub
           </motion.button>
           
           <motion.div
@@ -96,36 +108,19 @@ const ResearcherSection = ({ onBack }: ResearcherSectionProps) => {
           className="max-w-4xl mx-auto text-center"
         >
           <span className="inline-block font-serif italic text-sm text-researcher-accent mb-4 tracking-wider">
-            Behavioral AI & Cognitive Computing Researcher
+            Behavioral AI & Cognitive Computing
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-researcher-text mb-6 leading-tight">
-            Exploring the{" "}
-            <span className="gradient-text-researcher">Mind-Machine Interface</span>
+            The Research{" "}
+            <span className="gradient-text-researcher italic">Chronicle</span>
           </h1>
           <p className="text-researcher-text-muted text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-serif">
-            My research bridges behavioral psychology and artificial intelligence, 
-            investigating how technology shapes human cognition and designing systems 
-            that adapt to our emotional landscapes.
+            A journey through inquiry—where each publication is a chapter in understanding the human mind.
           </p>
         </motion.div>
       </section>
 
-      {/* Affiliation */}
-      <section className="py-8 px-6 border-y border-researcher-accent/10 bg-researcher-surface/50">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="max-w-4xl mx-auto flex items-center justify-center gap-4"
-        >
-          <GraduationCap className="w-6 h-6 text-researcher-accent" />
-          <p className="font-serif text-researcher-text">
-            Maharashtra Institute of Technology (MITCOE), Pune
-          </p>
-        </motion.div>
-      </section>
-
-      {/* Publications */}
+      {/* Timeline Publications */}
       <section className="py-20 px-6">
         <motion.div
           variants={containerVariants}
@@ -133,78 +128,109 @@ const ResearcherSection = ({ onBack }: ResearcherSectionProps) => {
           animate="visible"
           className="max-w-5xl mx-auto"
         >
-          <div className="flex items-center justify-center gap-3 mb-12">
+          <div className="flex items-center justify-center gap-3 mb-16">
             <FileText className="w-6 h-6 text-researcher-accent" />
             <h2 className="font-serif text-2xl text-researcher-text">
-              Published <span className="italic text-researcher-accent">Research</span>
+              Published <span className="italic text-researcher-accent">Chapters</span>
             </h2>
           </div>
           
-          <div className="space-y-10">
-            {publications.map((pub, index) => (
-              <motion.article
-                key={pub.title}
-                variants={itemVariants}
-                className="relative bg-white rounded-2xl p-8 shadow-lg border border-researcher-accent/5 hover:shadow-xl transition-all duration-300"
-              >
-                {/* Publisher badge */}
-                <div className="absolute top-6 right-6 flex items-center gap-2">
-                  <span className="px-3 py-1 bg-researcher-accent/10 text-researcher-accent font-serif text-xs rounded-full font-medium">
-                    {pub.publisher}
-                  </span>
-                  <span className="text-researcher-text-muted font-serif text-sm">
-                    {pub.year}
-                  </span>
-                </div>
-                
-                <div className="pr-32">
-                  <h3 className="font-serif text-xl font-semibold text-researcher-text mb-6 leading-snug">
-                    {pub.title}
-                  </h3>
-                </div>
-                
-                <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div>
-                    <span className="font-serif text-xs text-researcher-accent uppercase tracking-wider font-medium">
-                      Hypothesis
-                    </span>
-                    <p className="text-researcher-text-muted text-sm mt-2 leading-relaxed font-serif italic">
-                      {pub.hypothesis}
-                    </p>
-                  </div>
-                  <div>
-                    <span className="font-serif text-xs text-researcher-accent uppercase tracking-wider font-medium">
-                      Methodology
-                    </span>
-                    <p className="text-researcher-text-muted text-sm mt-2 leading-relaxed">
-                      {pub.methodology}
-                    </p>
-                  </div>
-                  <div>
-                    <span className="font-serif text-xs text-researcher-accent uppercase tracking-wider font-medium">
-                      Outcome
-                    </span>
-                    <p className="text-researcher-text text-sm mt-2 leading-relaxed font-medium">
-                      {pub.outcome}
-                    </p>
-                  </div>
-                </div>
-                
-                <a
-                  href={pub.link}
-                  className="inline-flex items-center gap-2 text-researcher-accent hover:text-researcher-glow transition-colors font-serif text-sm"
+          {/* Timeline */}
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-researcher-accent/20 hidden md:block" />
+            
+            <div className="space-y-16">
+              {researchChronicle.map((pub, index) => (
+                <motion.article
+                  key={pub.title}
+                  variants={itemVariants}
+                  className={`relative flex flex-col md:flex-row gap-8 ${
+                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
                 >
-                  <ExternalLink className="w-4 h-4" />
-                  View Publication
-                </a>
-              </motion.article>
-            ))}
+                  {/* Timeline dot */}
+                  <div className="absolute left-8 md:left-1/2 w-4 h-4 -ml-2 rounded-full bg-researcher-accent border-4 border-researcher-bg hidden md:block" />
+                  
+                  {/* Content */}
+                  <div className={`flex-1 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"}`}>
+                    <div className="bg-white rounded-2xl p-8 shadow-lg border border-researcher-accent/5 hover:shadow-xl transition-all duration-300 group">
+                      {/* Story title */}
+                      <p className="font-serif italic text-researcher-accent text-lg mb-2">
+                        "{pub.storyTitle}"
+                      </p>
+                      
+                      {/* Publisher badge */}
+                      <div className={`flex items-center gap-2 mb-4 ${index % 2 === 0 ? "md:justify-end" : ""}`}>
+                        <span className="px-3 py-1 bg-researcher-accent/10 text-researcher-accent font-serif text-xs rounded-full font-medium">
+                          {pub.publisher}
+                        </span>
+                        <span className="text-researcher-text-muted font-serif text-sm">
+                          {pub.year}
+                        </span>
+                      </div>
+                      
+                      <h3 className="font-serif text-xl font-semibold text-researcher-text mb-6 leading-snug">
+                        {pub.title}
+                      </h3>
+                      
+                      <div className="space-y-4 text-left">
+                        <div>
+                          <span className="font-serif text-xs text-researcher-accent uppercase tracking-wider font-medium">
+                            Hypothesis
+                          </span>
+                          <p className="text-researcher-text-muted text-sm mt-1 leading-relaxed font-serif italic">
+                            {pub.hypothesis}
+                          </p>
+                        </div>
+                        <div>
+                          <span className="font-serif text-xs text-researcher-accent uppercase tracking-wider font-medium">
+                            Methodology
+                          </span>
+                          <p className="text-researcher-text-muted text-sm mt-1 leading-relaxed">
+                            {pub.methodology}
+                          </p>
+                        </div>
+                        <div>
+                          <span className="font-serif text-xs text-researcher-accent uppercase tracking-wider font-medium">
+                            Outcome
+                          </span>
+                          <div className="mt-2">
+                            <div className="flex flex-wrap gap-2 mb-2">
+                              {pub.outcome.metrics.map((metric) => (
+                                <span key={metric} className="px-2 py-1 bg-researcher-accent/10 text-researcher-accent font-serif text-xs rounded font-semibold">
+                                  {metric}
+                                </span>
+                              ))}
+                            </div>
+                            <p className="text-researcher-text text-sm font-medium">
+                              {pub.outcome.narrative}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <a
+                        href={pub.link}
+                        className="inline-flex items-center gap-2 text-researcher-accent hover:text-researcher-glow transition-colors font-serif text-sm mt-6"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Read Publication
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Spacer for alternating layout */}
+                  <div className="hidden md:block flex-1" />
+                </motion.article>
+              ))}
+            </div>
           </div>
         </motion.div>
       </section>
 
-      {/* Ongoing Research */}
-      <section className="py-20 px-6 bg-researcher-surface/30">
+      {/* Future Chapter - Behavioral Astrology */}
+      <section className="py-20 px-6 bg-gradient-to-b from-researcher-surface/30 to-researcher-bg">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -214,37 +240,47 @@ const ResearcherSection = ({ onBack }: ResearcherSectionProps) => {
           <div className="flex items-center justify-center gap-3 mb-12">
             <Lightbulb className="w-6 h-6 text-researcher-accent" />
             <h2 className="font-serif text-2xl text-researcher-text">
-              Ongoing <span className="italic text-researcher-accent">Research</span>
+              The <span className="italic text-researcher-accent">Future Chapter</span>
             </h2>
           </div>
           
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-researcher-accent/10 relative overflow-hidden">
-            {/* Decorative quote mark */}
-            <span className="absolute top-4 right-8 text-9xl font-serif text-researcher-accent/5">
-              "
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-researcher-accent/10 relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-researcher-accent/5 to-transparent rounded-full -translate-y-1/2 translate-x-1/2" />
+            <Sparkles className="absolute top-8 right-8 w-8 h-8 text-researcher-accent/20" />
+            
+            <span className="inline-flex items-center gap-2 px-3 py-1 bg-researcher-accent text-white font-serif text-xs rounded-full font-medium mb-6">
+              <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+              Work in Progress
             </span>
             
-            <span className="inline-block px-3 py-1 bg-researcher-accent text-white font-serif text-xs rounded-full font-medium mb-4">
-              In Progress
-            </span>
-            
-            <h3 className="font-serif text-2xl font-semibold text-researcher-text mb-2">
-              {ongoingResearch.title}
+            <h3 className="font-serif text-3xl font-semibold text-researcher-text mb-2">
+              {futureResearch.title}
             </h3>
             
-            <p className="font-serif italic text-researcher-accent mb-6">
-              {ongoingResearch.focus}
+            <p className="font-serif italic text-researcher-accent text-lg mb-8">
+              {futureResearch.subtitle}
             </p>
             
-            <p className="text-researcher-text-muted leading-relaxed mb-8 text-lg">
-              {ongoingResearch.description}
+            <p className="text-researcher-text-muted leading-relaxed mb-6 text-lg">
+              {futureResearch.description}
+            </p>
+            
+            <blockquote className="border-l-4 border-researcher-accent pl-6 my-8">
+              <p className="text-researcher-text font-serif italic text-lg">
+                {futureResearch.focus}
+              </p>
+            </blockquote>
+            
+            <p className="text-researcher-text leading-relaxed mb-8">
+              {futureResearch.vision}
             </p>
             
             <div className="flex flex-wrap gap-2">
-              {ongoingResearch.themes.map((theme) => (
+              {futureResearch.themes.map((theme) => (
                 <span
                   key={theme}
-                  className="px-4 py-2 bg-researcher-surface text-researcher-text font-serif text-sm rounded-full"
+                  className="px-4 py-2 bg-researcher-surface text-researcher-text font-serif text-sm rounded-full border border-researcher-accent/10"
                 >
                   {theme}
                 </span>
@@ -266,12 +302,11 @@ const ResearcherSection = ({ onBack }: ResearcherSectionProps) => {
             Interested in <span className="gradient-text-researcher italic">Collaboration?</span>
           </h2>
           <p className="text-researcher-text-muted mb-8 font-serif">
-            I'm always open to discussing research opportunities, academic collaborations, 
-            or speaking engagements in the field of behavioral AI.
+            I welcome academic collaborations, research partnerships, and speaking engagements in behavioral AI.
           </p>
           <button className="inline-flex items-center gap-2 px-8 py-4 bg-researcher-accent text-white font-serif font-semibold rounded-lg hover:bg-researcher-glow transition-all duration-300 glow-amber">
             <BookOpen className="w-4 h-4" />
-            Connect for Research
+            Request Collaboration
           </button>
         </motion.div>
       </section>

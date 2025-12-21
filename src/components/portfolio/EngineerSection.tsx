@@ -1,61 +1,61 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Pill, LineChart, MessageSquare, Cpu, Database, Server, Cloud, Code } from "lucide-react";
+import { ArrowLeft, Pill, LineChart, MessageSquare, Database, Server, Cloud, Code, Layers, Cog } from "lucide-react";
 
 interface EngineerSectionProps {
   onBack: () => void;
 }
 
-const projects = [
+const caseStudies = [
   {
     icon: Pill,
     title: "Medicine OCR — Pharmacy AI Scanner",
-    challenge: "300+ pharmacy retailers struggled with manual inventory management, leading to stock discrepancies and delayed restocking cycles.",
-    solution: "Developed a deep learning-powered OCR system using custom-trained CNNs to automatically scan and digitize medicine labels, batch codes, and expiry dates in real-time.",
-    impact: "99.2% accuracy in text extraction • 8-12 week implementation timeline • Processing 10,000+ labels daily across retail network",
+    challenge: "300+ pharmacy retailers drowning in manual inventory chaos. Stock errors, delayed restocking, and compliance nightmares threatened profitability.",
+    solution: "Engineered a deep learning OCR pipeline with custom-trained CNNs, optimizing real-time label scanning for batch codes, expiry dates, and drug identifiers.",
+    impact: {
+      metrics: ["98.5% accuracy", "300+ retailers", "8-12 week rollout"],
+      highlight: "Processing 10,000+ labels daily with sub-second latency."
+    },
     tags: ["Computer Vision", "Deep Learning", "FastAPI", "PostgreSQL"],
   },
   {
     icon: LineChart,
     title: "Financial Analysis Engine",
-    challenge: "Financial analysts spent 40+ hours weekly manually parsing through complex documents, causing bottlenecks in deal flow.",
-    solution: "Built an intelligent document analysis pipeline using RAG architecture, combining vector embeddings with LLM reasoning for contextual extraction of financial metrics.",
-    impact: "75% reduction in document analysis time • Processing 500+ documents monthly • $200K+ annual cost savings for client",
+    challenge: "Analysts buried under 40+ hours of weekly document parsing. Deal velocity stalled; opportunities slipped away.",
+    solution: "Orchestrated an intelligent RAG pipeline combining vector embeddings with LLM reasoning for contextual extraction of financial metrics from complex documents.",
+    impact: {
+      metrics: ["75% faster auditing", "500+ docs/month", "$200K+ saved"],
+      highlight: "Reduced document analysis from hours to minutes."
+    },
     tags: ["RAG", "LangChain", "OpenAI", "MongoDB"],
   },
   {
     icon: MessageSquare,
-    title: "Conversational Automation Platform",
-    challenge: "'Wholesome Start' and similar businesses needed 24/7 customer engagement but couldn't afford round-the-clock staff.",
-    solution: "Engineered autonomous WhatsApp/Instagram bots with natural language understanding, seamless payment integration, and intelligent order management workflows.",
-    impact: "24/7 autonomous order-taking • 300+ orders processed daily • 89% customer satisfaction rate",
+    title: "Wholesome Start — Conversational Automation",
+    challenge: "'Wholesome Start' needed 24/7 customer engagement but couldn't scale human operators to meet demand spikes.",
+    solution: "Optimized autonomous WhatsApp/Instagram bots with natural language understanding, seamless payment flows, and intelligent order management workflows.",
+    impact: {
+      metrics: ["24/7 uptime", "300+ orders/day", "89% satisfaction"],
+      highlight: "Fully autonomous order-taking with zero human intervention."
+    },
     tags: ["WhatsApp API", "NLU", "Node.js", "Redis"],
-  },
-  {
-    icon: Cpu,
-    title: "Generative AI Pipelines",
-    challenge: "Enterprise clients needed scalable, secure deployment of generative AI capabilities without vendor lock-in.",
-    solution: "Designed containerized microservices architecture for Stable Diffusion APIs and enterprise LLM integrations (OpenAI, Gemini), with auto-scaling and cost optimization.",
-    impact: "Sub-2s image generation latency • 99.9% uptime SLA • Supporting 50K+ API calls daily",
-    tags: ["Docker", "Kubernetes", "AWS", "Stable Diffusion"],
   },
 ];
 
 const techStack = [
-  { name: "Python", icon: Code },
-  { name: "FastAPI", icon: Server },
-  { name: "MongoDB", icon: Database },
-  { name: "PostgreSQL", icon: Database },
-  { name: "Docker", icon: Cloud },
-  { name: "AWS", icon: Cloud },
+  { name: "Python", icon: Code, category: "Language" },
+  { name: "FastAPI", icon: Server, category: "Framework" },
+  { name: "MongoDB", icon: Database, category: "Database" },
+  { name: "PostgreSQL", icon: Database, category: "Database" },
+  { name: "Docker", icon: Layers, category: "DevOps" },
+  { name: "AWS", icon: Cloud, category: "Cloud" },
+  { name: "ReactJS", icon: Cog, category: "Frontend" },
 ];
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
+    transition: { staggerChildren: 0.1 },
   },
 };
 
@@ -77,7 +77,7 @@ const EngineerSection = ({ onBack }: EngineerSectionProps) => {
             className="inline-flex items-center gap-2 text-engineer-text-muted hover:text-engineer-accent transition-colors font-mono text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Split View
+            Return to Hub
           </motion.button>
           
           <motion.div
@@ -85,11 +85,9 @@ const EngineerSection = ({ onBack }: EngineerSectionProps) => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-4"
           >
-            {techStack.slice(0, 3).map((tech) => (
-              <span key={tech.name} className="text-engineer-text-muted font-mono text-xs hidden md:block">
-                {tech.name}
-              </span>
-            ))}
+            <span className="text-engineer-accent font-mono text-xs tracking-wider hidden md:block">
+              SDE / AI ENGINEER
+            </span>
           </motion.div>
         </div>
       </header>
@@ -106,12 +104,11 @@ const EngineerSection = ({ onBack }: EngineerSectionProps) => {
             Backend Developer & AI Engineer
           </span>
           <h1 className="font-mono text-4xl md:text-5xl lg:text-6xl font-bold text-engineer-text mb-6 leading-tight">
-            Engineering{" "}
-            <span className="gradient-text-engineer">Intelligent Systems</span>
+            Case{" "}
+            <span className="gradient-text-engineer">Studies</span>
           </h1>
           <p className="text-engineer-text-muted text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-            Specializing in Python (FastAPI/Flask) and Gen-AI. I build scalable APIs, 
-            RAG systems, and document intelligence solutions that power real businesses.
+            Python (FastAPI/Flask) • RAG Systems • Document Intelligence • Gen-AI Pipelines
           </p>
         </motion.div>
       </section>
@@ -125,24 +122,29 @@ const EngineerSection = ({ onBack }: EngineerSectionProps) => {
           className="max-w-4xl mx-auto"
         >
           <h3 className="font-mono text-sm text-engineer-accent mb-8 text-center uppercase tracking-wider">
-            Tech Stack
+            Technology Arsenal
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {techStack.map((tech) => (
               <motion.div
                 key={tech.name}
                 variants={itemVariants}
-                className="flex items-center gap-2 px-4 py-2 bg-engineer-surface rounded-lg border border-engineer-accent/10 hover:border-engineer-accent/30 transition-colors"
+                className="group relative flex items-center gap-2 px-4 py-2 bg-engineer-surface rounded-lg border border-engineer-accent/10 hover:border-engineer-accent/40 hover:glow-cyan transition-all duration-300"
               >
                 <tech.icon className="w-4 h-4 text-engineer-accent" />
                 <span className="font-mono text-sm text-engineer-text">{tech.name}</span>
+                
+                {/* Hover reveal: code snippet effect */}
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-engineer-accent text-engineer-bg text-xs font-mono rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  {tech.category}
+                </div>
               </motion.div>
             ))}
           </div>
         </motion.div>
       </section>
 
-      {/* Projects */}
+      {/* Case Studies */}
       <section className="py-20 px-6">
         <motion.div
           variants={containerVariants}
@@ -151,54 +153,72 @@ const EngineerSection = ({ onBack }: EngineerSectionProps) => {
           className="max-w-5xl mx-auto"
         >
           <h2 className="font-mono text-2xl text-engineer-text mb-12 text-center">
-            Featured <span className="text-engineer-accent">Projects</span>
+            Featured <span className="text-engineer-accent">Case Studies</span>
           </h2>
           
           <div className="space-y-8">
-            {projects.map((project, index) => (
+            {caseStudies.map((study, index) => (
               <motion.article
-                key={project.title}
+                key={study.title}
                 variants={itemVariants}
-                className="relative bg-engineer-surface rounded-2xl p-8 border border-engineer-accent/10 hover:border-engineer-accent/30 transition-all duration-300 group"
+                className="relative bg-engineer-surface rounded-2xl p-8 border border-engineer-accent/10 hover:border-engineer-accent/30 transition-all duration-300 group overflow-hidden"
               >
                 {/* Project number */}
-                <span className="absolute top-6 right-8 font-mono text-6xl font-bold text-engineer-accent/5 group-hover:text-engineer-accent/10 transition-colors">
+                <span className="absolute top-6 right-8 font-mono text-7xl font-bold text-engineer-accent/5 group-hover:text-engineer-accent/10 transition-colors">
                   0{index + 1}
                 </span>
                 
                 <div className="relative z-10">
                   <div className="flex items-start gap-4 mb-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-engineer-bg border border-engineer-accent/20 flex items-center justify-center">
-                      <project.icon className="w-6 h-6 text-engineer-accent" />
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-engineer-bg border border-engineer-accent/20 flex items-center justify-center group-hover:glow-cyan transition-all">
+                      <study.icon className="w-6 h-6 text-engineer-accent" />
                     </div>
                     <h3 className="font-mono text-xl font-semibold text-engineer-text pt-2">
-                      {project.title}
+                      {study.title}
                     </h3>
                   </div>
                   
                   <div className="grid md:grid-cols-3 gap-6 mb-6">
                     <div>
-                      <span className="font-mono text-xs text-engineer-accent uppercase tracking-wider">Challenge</span>
+                      <span className="font-mono text-xs text-red-400 uppercase tracking-wider flex items-center gap-1">
+                        <span className="w-2 h-2 rounded-full bg-red-400/50" />
+                        Challenge
+                      </span>
                       <p className="text-engineer-text-muted text-sm mt-2 leading-relaxed">
-                        {project.challenge}
+                        {study.challenge}
                       </p>
                     </div>
                     <div>
-                      <span className="font-mono text-xs text-engineer-accent uppercase tracking-wider">Solution</span>
+                      <span className="font-mono text-xs text-engineer-accent uppercase tracking-wider flex items-center gap-1">
+                        <span className="w-2 h-2 rounded-full bg-engineer-accent/50" />
+                        Solution
+                      </span>
                       <p className="text-engineer-text-muted text-sm mt-2 leading-relaxed">
-                        {project.solution}
+                        {study.solution}
                       </p>
                     </div>
                     <div>
-                      <span className="font-mono text-xs text-engineer-accent uppercase tracking-wider">Impact</span>
-                      <p className="text-engineer-text text-sm mt-2 leading-relaxed font-medium">
-                        {project.impact}
-                      </p>
+                      <span className="font-mono text-xs text-green-400 uppercase tracking-wider flex items-center gap-1">
+                        <span className="w-2 h-2 rounded-full bg-green-400/50" />
+                        Impact
+                      </span>
+                      <div className="mt-2">
+                        <div className="flex flex-wrap gap-2 mb-2">
+                          {study.impact.metrics.map((metric) => (
+                            <span key={metric} className="px-2 py-1 bg-green-400/10 text-green-400 font-mono text-xs rounded font-bold">
+                              {metric}
+                            </span>
+                          ))}
+                        </div>
+                        <p className="text-engineer-text text-sm font-medium">
+                          {study.impact.highlight}
+                        </p>
+                      </div>
                     </div>
                   </div>
                   
                   <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
+                    {study.tags.map((tag) => (
                       <span
                         key={tag}
                         className="px-3 py-1 bg-engineer-accent/10 text-engineer-accent font-mono text-xs rounded-full"
@@ -223,13 +243,13 @@ const EngineerSection = ({ onBack }: EngineerSectionProps) => {
           className="max-w-2xl mx-auto text-center"
         >
           <h2 className="font-mono text-2xl text-engineer-text mb-4">
-            Let's Build Something <span className="gradient-text-engineer">Exceptional</span>
+            Ready to <span className="gradient-text-engineer">Optimize</span>?
           </h2>
           <p className="text-engineer-text-muted mb-8">
-            Looking for a backend architect or AI engineer? Let's discuss your next project.
+            Let's architect your next high-performance system together.
           </p>
           <button className="inline-flex items-center gap-2 px-8 py-4 bg-engineer-accent text-engineer-bg font-mono font-semibold rounded-lg hover:bg-engineer-glow transition-all duration-300 glow-cyan">
-            Get in Touch
+            Initialize Contact
           </button>
         </motion.div>
       </section>

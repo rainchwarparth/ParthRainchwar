@@ -3,13 +3,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import SplitHero from "@/components/portfolio/SplitHero";
 import EngineerSection from "@/components/portfolio/EngineerSection";
 import ResearcherSection from "@/components/portfolio/ResearcherSection";
+import HumanAxisSection from "@/components/portfolio/HumanAxisSection";
 
-type View = "split" | "engineer" | "researcher";
+type View = "split" | "engineer" | "researcher" | "human";
 
 const Index = () => {
   const [currentView, setCurrentView] = useState<View>("split");
 
-  const handleNavigate = (side: "engineer" | "researcher") => {
+  const handleNavigate = (side: "engineer" | "researcher" | "human") => {
     setCurrentView(side);
   };
 
@@ -53,6 +54,18 @@ const Index = () => {
             transition={{ duration: 0.4 }}
           >
             <ResearcherSection onBack={handleBack} />
+          </motion.div>
+        )}
+
+        {currentView === "human" && (
+          <motion.div
+            key="human"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.4 }}
+          >
+            <HumanAxisSection onBack={handleBack} />
           </motion.div>
         )}
       </AnimatePresence>

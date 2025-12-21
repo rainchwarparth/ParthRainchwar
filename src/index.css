@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Split-Screen Portfolio Design System */
+/* Dual-Core Identity Portfolio Design System */
 
 @layer base {
   :root {
@@ -11,7 +11,7 @@
     --foreground: 0 0% 95%;
     --radius: 0.75rem;
 
-    /* Engineer Side - Dark Tech */
+    /* Engineer Side - Cyber-Lime / Deep Black */
     --engineer-bg: 240 15% 5%;
     --engineer-surface: 240 12% 8%;
     --engineer-accent: 185 100% 50%;
@@ -20,7 +20,7 @@
     --engineer-text: 0 0% 95%;
     --engineer-text-muted: 220 10% 65%;
 
-    /* Researcher Side - Warm Ivory */
+    /* Researcher Side - Ivory / Soft Indigo */
     --researcher-bg: 40 30% 96%;
     --researcher-surface: 40 25% 92%;
     --researcher-accent: 32 95% 44%;
@@ -28,6 +28,14 @@
     --researcher-muted: 30 10% 50%;
     --researcher-text: 30 25% 12%;
     --researcher-text-muted: 30 10% 40%;
+
+    /* Human Axis - The Bridge (Neutral Slate) */
+    --human-axis: 220 20% 12%;
+    --human-axis-surface: 220 18% 16%;
+    --human-axis-accent: 200 80% 60%;
+    --human-axis-text: 0 0% 92%;
+    --human-axis-text-muted: 220 10% 60%;
+    --human-axis-border: 220 15% 20%;
 
     /* Shadcn defaults (engineer theme) */
     --card: 240 12% 8%;

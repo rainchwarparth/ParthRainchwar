@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Terminal, BookMarked, ChevronRight, Users } from "lucide-react";
+import ProfilePositioning from "./ProfilePositioning";
 
 interface SplitHeroProps {
   onNavigate: (side: "engineer" | "researcher" | "human") => void;
@@ -8,6 +9,8 @@ interface SplitHeroProps {
 const SplitHero = ({ onNavigate }: SplitHeroProps) => {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Profile Positioning - Identity Layer */}
+      <ProfilePositioning />
       {/* Main Split View */}
       <div className="flex-1 flex flex-col lg:flex-row">
         {/* The Architect - Engineer Side */}

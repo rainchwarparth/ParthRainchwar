@@ -44,9 +44,8 @@ const Index = () => {
           name={profile.name}
           tagline={profile.tagline}
           positioning={profile.positioning}
-          statusEntries={currentStatus}
         />
-        <About paragraphs={profile.about} techStack={techStack} />
+        <About paragraphs={profile.about} techStack={techStack} statusEntries={currentStatus} />
         <TwoTrackSection
           builderProjects={builderProjects}
           caseStudies={caseStudies}

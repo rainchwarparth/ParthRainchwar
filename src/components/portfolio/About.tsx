@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
+import CurrentStatusBadges from "./CurrentStatusBadges";
+import type { CurrentStatusEntry } from "@/data/types";
 
 interface AboutProps {
   paragraphs: string[];
   techStack: string[];
+  statusEntries?: CurrentStatusEntry[];
 }
 
-const About = ({ paragraphs, techStack }: AboutProps) => {
+const About = ({ paragraphs, techStack, statusEntries }: AboutProps) => {
   return (
     <section id="about" className="py-24 px-6">
       <div className="max-w-3xl mx-auto">
@@ -39,6 +42,15 @@ const About = ({ paragraphs, techStack }: AboutProps) => {
               </span>
             ))}
           </div>
+
+          {statusEntries && statusEntries.length > 0 && (
+            <div className="mt-16">
+              <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                Currently
+              </h3>
+              <CurrentStatusBadges entries={statusEntries} variant="card" />
+            </div>
+          )}
         </motion.div>
       </div>
     </section>

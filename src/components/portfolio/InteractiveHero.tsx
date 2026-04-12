@@ -1,16 +1,12 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import CurrentStatusBadges from "./CurrentStatusBadges";
-import type { CurrentStatusEntry } from "@/data/types";
-
 interface InteractiveHeroProps {
   name: string;
   tagline: string;
   positioning: string;
-  statusEntries?: CurrentStatusEntry[];
 }
 
-export default function InteractiveHero({ name, tagline, positioning, statusEntries }: InteractiveHeroProps) {
+export default function InteractiveHero({ name, tagline, positioning }: InteractiveHeroProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -122,13 +118,6 @@ export default function InteractiveHero({ name, tagline, positioning, statusEntr
             What I Study
           </a>
         </motion.div>
-
-        {/* Current status badges */}
-        {statusEntries && statusEntries.length > 0 && (
-          <div className="mt-8">
-            <CurrentStatusBadges entries={statusEntries} />
-          </div>
-        )}
 
         <motion.div
           initial={{ opacity: 0 }}

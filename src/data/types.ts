@@ -216,6 +216,8 @@ export interface CurrentStatusEntry {
   label: string;
   role: string;
   description: string;
+  highlights?: string[];
+  url?: string;
   color: "emerald" | "blue" | "violet" | "amber";
   status: "active" | "upcoming";
   since?: string;

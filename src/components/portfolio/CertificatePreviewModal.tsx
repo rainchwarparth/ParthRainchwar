@@ -56,13 +56,13 @@ export default function CertificatePreviewModal({
             </div>
 
             {/* Content - Certificate Image */}
-            <div className="flex-1 overflow-auto p-6 flex items-center justify-center bg-gradient-to-b from-muted/10 to-muted/20">
+            <div className="flex-1 overflow-y-auto p-6 bg-gradient-to-b from-muted/10 to-muted/20">
               {certificate.fileName && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.1 }}
-                  className="w-full max-w-3xl"
+                  className="mx-auto w-full max-w-3xl"
                 >
                   <img
                     src={certificate.fileName}

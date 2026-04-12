@@ -3,7 +3,12 @@
     "id": "work",
     "label": "At Work",
     "role": "Senior Analyst · Synpulse",
-    "description": "Financial systems consulting for global institutions and private banks.",
+    "description": "Financial systems consulting for global institutions and private banks — secure transaction workflows and wealth management platforms.",
+    "highlights": [
+      "Large-scale systems impacting thousands of end users across global banks",
+      "CX frameworks for wealth management combining technical delivery & UX research"
+    ],
+    "url": "https://www.synpulse.com/en/about-us",
     "color": "emerald",
     "status": "active",
     "since": "Dec 2024"
@@ -11,18 +16,30 @@
   {
     "id": "learning",
     "label": "Learning",
-    "role": "BITS Pilani — AIML PG Cert",
-    "description": "Post-graduate certification in AI & ML. Distance learning, in progress.",
+    "role": "BITS Pilani — AI/ML PG Certification",
+    "description": "Industry-aligned 11-month program covering deep learning, Gen AI, agentic systems, and scalable ML applied to real-world challenges.",
+    "highlights": [
+      "Deep learning architectures, Gen AI & agentic AI",
+      "Scalable ML systems with hands-on applied projects"
+    ],
+    "url": "https://bits-pilani-wilp.ac.in/certification/post-graduate-certification-in-ai-ml.php",
     "color": "blue",
-    "status": "active"
+    "status": "active",
+    "since": "Oct 2025"
   },
   {
     "id": "fellowship",
-    "label": "Fellowship",
-    "role": "Policy in Action",
-    "description": "Ekta Public Policy Fellowship — one-month intensive on governance, civic tech, and policy design in India.",
+    "label": "Fellowship · YLAC",
+    "role": "Policy in Action Fellow April 26 Cohort",
+    "description": "One-month intensive on policy analysis, advocacy, and leadership — working on live projects for MPs, MLAs, and government ministries.",
+    "highlights": [
+      "Live projects for MPs, ministries & governance institutions",
+      "Policy analysis, civic tech, and leadership skilling sessions"
+    ],
+    "url": "https://theylacproject.com/policy-in-action-program/",
     "color": "violet",
     "status": "upcoming",
-    "since": "Apr 17, 2026"
+    "since": "Apr 18, 2026",
+    "until": "May 17, 2026"
   }
 ]

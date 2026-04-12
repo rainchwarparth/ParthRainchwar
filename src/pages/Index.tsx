@@ -1,75 +1,65 @@
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import SplitHero from "@/components/portfolio/SplitHero";
-import EngineerSection from "@/components/portfolio/EngineerSection";
-import ResearcherSection from "@/components/portfolio/ResearcherSection";
-import HumanAxisSection from "@/components/portfolio/HumanAxisSection";
-
-type View = "split" | "engineer" | "researcher" | "human";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Navbar from "@/components/portfolio/Navbar";
+import InteractiveHero from "@/components/portfolio/InteractiveHero";
+import About from "@/components/portfolio/About";
+import TwoTrackSection from "@/components/portfolio/TwoTrackSection";
+import CertificatesMarquee from "@/components/portfolio/CertificatesMarquee";
+import UnifiedTimeline from "@/components/portfolio/UnifiedTimeline";
+import CredentialsSection from "@/components/portfolio/CredentialsSection";
+import ContactSection from "@/components/portfolio/ContactSection";
+import { navLinks } from "@/lib/navLinks";
+import {
+  profile,
+  techStack,
+  builderProjects,
+  caseStudies,
+  profileTimeline,
+  credentials,
+  certificates,
+  currentStatus,
+} from "@/data";
 
 const Index = () => {
-  const [currentView, setCurrentView] = useState<View>("split");
+  const location = useLocation();
 
-  const handleNavigate = (side: "engineer" | "researcher" | "human") => {
-    setCurrentView(side);
-  };
-
-  const handleBack = () => {
-    setCurrentView("split");
-  };
+  // Handle cross-page anchor scroll (e.g. from /workex clicking "About")
+  useEffect(() => {
+    const target = (location.state as { scrollTo?: string } | null)?.scrollTo;
+    if (!target) return;
+    const el = document.querySelector(target);
+    if (el) {
+      const timer = setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+      }, 220);
+      return () => clearTimeout(timer);
+    }
+  }, [location.state]);
 
   return (
-    <main className="min-h-screen">
-      <AnimatePresence mode="wait">
-        {currentView === "split" && (
-          <motion.div
-            key="split"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <SplitHero onNavigate={handleNavigate} />
-          </motion.div>
-        )}
-
-        {currentView === "engineer" && (
-          <motion.div
-            key="engineer"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.4 }}
-          >
-            <EngineerSection onBack={handleBack} />
-          </motion.div>
-        )}
-
-        {currentView === "researcher" && (
-          <motion.div
-            key="researcher"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 50 }}
-            transition={{ duration: 0.4 }}
-          >
-            <ResearcherSection onBack={handleBack} />
-          </motion.div>
-        )}
-
-        {currentView === "human" && (
-          <motion.div
-            key="human"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.4 }}
-          >
-            <HumanAxisSection onBack={handleBack} />
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </main>
+    <>
+      <Navbar links={navLinks} />
+      <main>
+        <InteractiveHero
+          name={profile.name}
+          tagline={profile.tagline}
+          positioning={profile.positioning}
+          statusEntries={currentStatus}
+        />
+        <About paragraphs={profile.about} techStack={techStack} />
+        <TwoTrackSection
+          builderProjects={builderProjects}
+          caseStudies={caseStudies}
+        />
+        <UnifiedTimeline entries={profileTimeline} />
+        <CredentialsSection
+          communityWork={credentials.communityWork}
+          certifications={certificates}
+        />
+        <CertificatesMarquee certificates={certificates} />
+        <ContactSection profile={profile} />
+      </main>
+    </>
   );
 };
 

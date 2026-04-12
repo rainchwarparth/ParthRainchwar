@@ -1,0 +1,104 @@
+{
+  "slug": "traceai",
+  "title": "TraceAI",
+  "tagline": "Deep Research, Without Hallucination",
+  "summary": "Most AI tools give you a confident-sounding answer and stop there. TraceAI treats that as the starting point. It maps knowledge as a structured graph — concepts, hypotheses, evidence, issues — and every AI response is grounded in what you've already established. It cannot fill gaps with guesses because you control the structure it reasons from.",
+  "year": "2026",
+  "status": "active",
+  "repoUrl": "https://github.com/rainchwarparth/TraceAI-Public",
+  "tags": ["Next.js 16", "TypeScript", "Groq", "LLaMA 3.3 70B", "ReactFlow", "Zustand", "Tailwind CSS v4", "Whisper"],
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "The Core Idea",
+      "body": "The problem with current AI research tools is that they optimize for sounding correct, not for being traceable. When you ask a question, you get an answer. When you ask where that answer comes from, you get another answer.\n\nTraceAI takes a different approach: knowledge is a graph, not a conversation. You define a problem statement — that becomes the root node. You explore concepts related to it. Each one becomes a typed node (concept, hypothesis, evidence, issue). The AI only suggests concepts that don't already exist in your graph — no repetition, no circular reasoning.\n\nEvery AI discussion is scoped to a specific node and is fully aware of the entire problem context. Structured responses — tables, comparisons, step-by-step breakdowns — are first-class citizens: pinnable research artifacts tied to specific nodes, not raw text buried in chat.\n\nThe result is a research session you can export, inspect, and hand to someone else who can follow your reasoning from root to leaf."
+    },
+    {
+      "type": "screenshots",
+      "heading": "What It Looks Like",
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/TraceAI-Public/main/screenshots/A.png",
+          "caption": "Three-panel layout — ontology tree (left), graph or research view (centre), AI explorer (right)"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/TraceAI-Public/main/screenshots/B.png",
+          "caption": "New Project Modal — define your research problem by typing or speaking to seed the first AI research pass"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/TraceAI-Public/main/screenshots/C.png",
+          "caption": "Ontology Graph — every concept is a typed, colour-coded node; every relationship is a labelled edge"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/TraceAI-Public/main/screenshots/D.png",
+          "caption": "Research Thread — the AI discusses a specific node within the full context of your problem"
+        }
+      ]
+    },
+    {
+      "type": "how-it-works",
+      "heading": "How It Works",
+      "steps": [
+        "You define a problem statement. This becomes the root node of your ontology graph.",
+        "The AI suggests related concepts that don't already exist in your graph — preventing circular reasoning.",
+        "Each concept becomes a typed, colour-coded node: Concept, Hypothesis, Evidence, or Issue.",
+        "Relationships between nodes get labelled edges: 'causes', 'contradicts', 'supports', etc.",
+        "Per-node AI discussion threads run with full problem context — the LLM sees the whole graph, not just the current message.",
+        "Structured AI responses (tables, comparisons, step-by-step analyses) are pinned as research artifacts to specific nodes.",
+        "Voice input (Groq Whisper) lets you speak your problem statement or queries.",
+        "The full project exports to JSON — shareable, inspectable, traceable from root to leaf."
+      ]
+    },
+    {
+      "type": "capabilities",
+      "heading": "Current Capabilities",
+      "capabilities": [
+        { "feature": "Ontology graph (visual, draggable, edge-labelled)", "status": "live" },
+        { "feature": "AI concept exploration (LLaMA 3.3 70B via Groq)", "status": "live" },
+        { "feature": "Per-node AI discussion threads with full context", "status": "live" },
+        { "feature": "Structured response cards (tables, lists, comparisons, steps)", "status": "live" },
+        { "feature": "Pinnable research artifacts", "status": "live" },
+        { "feature": "Voice input for problem statement and queries (Groq Whisper)", "status": "live" },
+        { "feature": "Undo/redo (30-step snapshot history)", "status": "live" },
+        { "feature": "Full project export to JSON", "status": "live" },
+        { "feature": "Keyboard-first navigation + command palette", "status": "live" },
+        { "feature": "Multi-agent architecture (parallel specialised agents)", "status": "in-design" },
+        { "feature": "Persistent storage (survive page refresh)", "status": "planned" },
+        { "feature": "Source citation linking on nodes", "status": "planned" },
+        { "feature": "Shareable read-only graph URLs", "status": "planned" },
+        { "feature": "Multi-user collaboration on a shared graph", "status": "planned" },
+        { "feature": "PDF / Markdown report export from ontology", "status": "planned" }
+      ]
+    },
+    {
+      "type": "tech-stack",
+      "heading": "Technical Stack",
+      "techStack": ["Next.js 16 (App Router)", "TypeScript", "Groq — LLaMA 3.3 70B", "Groq Whisper large-v3-turbo", "ReactFlow", "Zustand", "Tailwind CSS v4"]
+    },
+    {
+      "type": "open-problems",
+      "heading": "Open Design Problems",
+      "body": "These are hard problems worth thinking about. If you have informed opinions or prior work in any of these areas, that's a good reason to reach out.",
+      "problems": [
+        "Is a flat node-edge graph the right structure, or does the ontology need richer semantics — confidence scores, source reliability weights, temporal validity?",
+        "How do you prevent the graph from becoming too wide too fast? When does breadth stop helping and start obscuring?",
+        "The current approach passes the full problem context into every LLM call. This works but doesn't scale to large ontologies. What's the right retrieval strategy when the graph has hundreds of nodes?",
+        "How do you detect when an AI response is fabricating vs. reasoning from actual structure — without requiring a full citation system?",
+        "Research is non-linear. The current graph auto-layout doesn't reflect how people actually think through a problem. What would a better spatial metaphor look like?",
+        "Voice input is useful for seeding a problem, but is it the right input mode for deeper exploration, or does it create noise?"
+      ]
+    },
+    {
+      "type": "collaboration",
+      "heading": "Open to Collaboration",
+      "body": "This is an early-stage project with a clear direction and real ambition. I'm open to collaborating with people who want to help build something that matters — not just tinker.",
+      "backgrounds": [
+        "Knowledge representation / ontology engineering — RDF, OWL, knowledge graphs, or similar",
+        "AI/ML with a focus on grounding and factuality — RAG systems, citation networks, hallucination detection",
+        "Research tool design / information architecture — how people actually navigate complex information spaces",
+        "Full-stack (Next.js / React / TypeScript) — if you want to build features directly"
+      ],
+      "email": "parthrainchwar@gmail.com"
+    }
+  ]
+}

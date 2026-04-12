@@ -1,0 +1,28 @@
+[
+  {
+    "id": "work",
+    "label": "At Work",
+    "role": "Senior Analyst · Synpulse",
+    "description": "Financial systems consulting for global institutions and private banks.",
+    "color": "emerald",
+    "status": "active",
+    "since": "Dec 2024"
+  },
+  {
+    "id": "learning",
+    "label": "Learning",
+    "role": "BITS Pilani — AIML PG Cert",
+    "description": "Post-graduate certification in AI & ML. Distance learning, in progress.",
+    "color": "blue",
+    "status": "active"
+  },
+  {
+    "id": "fellowship",
+    "label": "Fellowship",
+    "role": "Policy in Action",
+    "description": "Ekta Public Policy Fellowship — one-month intensive on governance, civic tech, and policy design in India.",
+    "color": "violet",
+    "status": "upcoming",
+    "since": "Apr 17, 2026"
+  }
+]

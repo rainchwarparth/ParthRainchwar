@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "traceai",
+    "title": "TraceAI",
+    "description": "Agentic deep-research platform that maps knowledge as a structured graph — concepts, hypotheses, evidence, issues — with every AI response grounded in what you have already established. No hallucination by design.",
+    "impact": "Ontology graph · Per-node AI threads · Voice input · Undo/redo",
+    "tags": ["Next.js 16", "TypeScript", "Groq", "ReactFlow", "Zustand"],
+    "year": "2026",
+    "status": "active",
+    "repoUrl": "https://github.com/rainchwarparth/TraceAI-Public"
+  },
+  {
+    "slug": "sansad",
+    "title": "Sansad — Indian Election Strategy Game",
+    "description": "Browser-based turn-based political simulation built around the 2024 Indian General Election. Pick a real party, manage alliances, place candidates across all 543 Lok Sabha seats, and fight to 272 with an AI advisor commenting on your strategy.",
+    "impact": "543 constituencies · 5,000+ candidates · AI advisor · 7-turn campaign",
+    "tags": ["React", "TypeScript", "Game Design", "AI Advisor"],
+    "year": "2025",
+    "status": "wip",
+    "repoUrl": "https://github.com/rainchwarparth/Sansad-Game"
+  },
+  {
+    "slug": "trek",
+    "title": "Trek Recommendation System",
+    "description": "ML-powered web application that recommends hiking and trekking destinations from a database of 208+ treks using content-based filtering with cosine similarity. Originally a freelance project, open-sourced in 2022.",
+    "impact": "208+ treks · 10 recommendations · <1s response · REST API",
+    "tags": ["Flask", "scikit-learn", "Python", "Bootstrap"],
+    "year": "2022",
+    "status": "complete",
+    "repoUrl": "https://github.com/rainchwarparth/Treck-Recommendation-System-2022"
+  }
+]

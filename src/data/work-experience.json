@@ -1,0 +1,134 @@
+[
+  {
+    "company": "Synpulse",
+    "color": "blue",
+    "totalDuration": "4 yrs 1 mo",
+    "roles": [
+      {
+        "title": "Senior Analyst",
+        "type": "Full-time",
+        "start": "Dec 2024",
+        "end": "Present",
+        "duration": "1 yr 4 mos",
+        "location": "Remote",
+        "skills": ["Microservices", "Avaloq", "Java", "Spring Boot", "Wealth Management", "Client Consulting", "Financial Systems", "Angular", "PostgreSQL", "Python", "Core Banking", "Analytics", "API Design", "System Architecture"]
+      },
+      {
+        "title": "Analyst",
+        "type": "Full-time",
+        "start": "Sep 2023",
+        "end": "Dec 2024",
+        "duration": "1 yr 4 mos",
+        "location": "Remote",
+        "skills": ["Java", "Microservices", "Spring Boot", "Angular", "SQL", "Institutional Banking", "ICM Systems", "Core Banking", "Data Analytics", "Python", "Client Management", "Behavioral Research"]
+      },
+      {
+        "title": "Trainee Analyst",
+        "type": "Full-time",
+        "start": "Aug 2022",
+        "end": "Aug 2023",
+        "duration": "1 yr 1 mo",
+        "location": "Pune, India",
+        "bullets": [
+          "Designed a mutual fund system for one of India's leading private banks — received 'Pat on the Back' award",
+          "Contributed to the Syninformation platform with filter functionality — recognized as Star Performer",
+          "Selected as one of 6 employees across India for an exclusive internal data visualization and analytics certification"
+        ],
+        "skills": ["Investment Banking", "Microservices", "Java", "Spring Boot", "Angular", "SQL", "Python", "Mutual Fund Systems", "Consumer Psychology", "System Design", "Data Visualization"]
+      },
+      {
+        "title": "Intern",
+        "type": "Internship",
+        "start": "Apr 2022",
+        "end": "Jul 2022",
+        "duration": "4 mos",
+        "location": "Pune, India",
+        "bullets": [
+          "Built the Business Radar dashboard using Angular, Spring Boot, SQL, and Python for Synpulse's Germany team",
+          "Earned BRv7 certification — awarded to a select few interns globally",
+          "Secured a Pre-Placement Offer converting directly to Trainee Analyst"
+        ],
+        "skills": ["AutoML", "Microservices", "Angular", "Spring Boot", "SQL", "Python", "Business Intelligence", "Data Visualization", "Dashboard Development"]
+      }
+    ]
+  },
+  {
+    "company": "AI / ML Freelancer",
+    "color": "purple",
+    "roles": [
+      {
+        "title": "AI / ML Freelancer",
+        "type": "Freelance",
+        "start": "Aug 2021",
+        "end": "May 2022",
+        "duration": "10 mos",
+        "location": "Maharashtra, India",
+        "locationMode": "Remote",
+        "bullets": [
+          "Delivered the Trek Recommendation System — ML-powered system covering 208+ treks using Flask + scikit-learn KNN",
+          "Worked on NLP and data pipeline projects for independent clients across research and product domains"
+        ],
+        "skills": ["Python", "R", "NLP", "scikit-learn", "Flask", "Machine Learning", "REST API", "Data Science", "Recommendation Systems", "MongoDB", "Feature Engineering"]
+      }
+    ]
+  },
+  {
+    "company": "C-DAC — Govt. of India",
+    "color": "emerald",
+    "roles": [
+      {
+        "title": "Research Intern",
+        "type": "Internship",
+        "start": "Nov 2021",
+        "end": "Apr 2022",
+        "duration": "6 mos",
+        "location": "Pune, India",
+        "locationMode": "On-site",
+        "bullets": [
+          "Sponsored by Dr. Krishnanjan Bhattacharjee (Joint Director, SPG) after IdeaIn10 work drew his attention",
+          "Domain Identification for Named Entity Disambiguation — DistilBERT + Zero-Shot classification",
+          "Achieved 99.24% domain classification accuracy and 93% named entity recognition across 6 domains",
+          "Built an autonomous Selenium data pipeline producing 11,000+ labeled rows; deployed Streamlit web interface"
+        ],
+        "skills": ["NLP", "BERT", "DistilBERT", "Python", "Selenium", "Streamlit", "SpaCy", "Transformers", "Zero-Shot Classification", "Named Entity Recognition", "Software Development", "Data Pipeline"]
+      }
+    ]
+  },
+  {
+    "company": "TechHut",
+    "color": "orange",
+    "roles": [
+      {
+        "title": "Full-Stack Developer Intern",
+        "type": "Internship",
+        "start": "Jul 2021",
+        "end": "Oct 2021",
+        "duration": "4 mos",
+        "location": "Pune, India",
+        "locationMode": "On-site",
+        "bullets": [
+          "Developed a MERN application for real-time cryptocurrency price tracking",
+          "Implemented filtering API and integrated MongoDB for efficient data management",
+          "Built the React frontend interface with a seamless and visually appealing UX"
+        ],
+        "skills": ["React", "Node.js", "MongoDB", "Redis", "Express.js", "REST API", "Software Development", "JavaScript"]
+      }
+    ]
+  },
+  {
+    "company": "HelpingWind",
+    "color": "rose",
+    "roles": [
+      {
+        "title": "Social Media Manager & Content Writer",
+        "type": "Internship",
+        "start": "Aug 2020",
+        "end": "Jun 2021",
+        "duration": "11 mos",
+        "location": "Remote",
+        "locationMode": "Remote",
+        "skills": ["SEO", "Web Content Writing", "Social Media Management", "Content Strategy", "Copywriting", "Digital Marketing"]
+      }
+    ]
+  }
+]

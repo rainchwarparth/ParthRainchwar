@@ -2,7 +2,7 @@
   {
     "year": "2016",
     "title": "KV Schooling — Kendriya Vidyalaya",
-    "description": "Completed schooling at Kendriya Vidyalaya. Built a foundation in science and mathematics before pursuing engineering.",
+    "description": "Kendriya Vidyalaya, central government schooling. Science and math stream through Class 12.",
     "track": "milestone"
   },
   {
@@ -15,14 +15,14 @@
   {
     "year": "2018",
     "title": "Peer Tutor — Maths, C++, Python, ML, R",
-    "description": "Peer tutored foundational subjects including Mathematics I/II/III, Introduction to C++, Python, R, Tableau, Basic Machine Learning, and Database Management.",
+    "description": "Tutored batchmates across Maths I/II/III, C++, Python, R, Tableau, and intro ML. Started because i loved teaching and people asked and kept going because it forced me to understand the material properly.",
     "date": "Jul 2018 – Jun 2019",
     "track": "milestone"
   },
   {
     "year": "2018",
     "title": "Freelancer — Software & Web Projects",
-    "description": "Started freelancing on software and web development alongside college. Delivered client projects throughout college years — the Trek Recommendation System was one such engagement.",
+    "description": "Started picking up software and web projects alongside college. Ran mostly on referrals. The Trek Recommendation System was the last built during this stretch.",
     "track": "tech"
   },
   {
@@ -42,7 +42,7 @@
   {
     "year": "2020",
     "title": "RA — Data Warehouse Lab, MIT-WPU",
-    "description": "Invited by Prof. Varsha (Data Warehousing & Data Management) to join the lab as Research Assistant after an impressive semester project on psychological market basket analysis. Led a 30-month behavioral research initiative analyzing 10,000+ individual responses.",
+    "description": "Prof. Varsha reached out after a semester project on psychological market basket analysis caught her attention. Joined the Data Warehouse Lab as Research Assistant and spent the next 30 months running behavioral research across 10,000+ parameters.",
     "track": "research"
   },
   {
@@ -57,7 +57,7 @@
   {
     "year": "2020",
     "title": "Haar Cascade Research — Smart Voting System",
-    "description": "Began surveying 14 face recognition methods to solve India's duplicate vote challenge. Built a Haar Cascade + LBPH pipeline in Python + OpenCV to enforce biometric one-person-one-vote verification.",
+    "description": "Read through 14 published studies on face recognition methods. The question was which hybrid would actually work for single-voter, real-time deployment. Built the Haar Cascade + LBPH pipeline in Python and OpenCV.",
     "track": "tech",
     "slug": "haar-cascade",
     "linkType": "case"
@@ -65,7 +65,7 @@
   {
     "year": "2021",
     "title": "Open Research Forum — 1,000+ Peer Interviews",
-    "description": "Founded a research forum for structured behavioral Q&A data collection. Conducted 1,000+ video interviews across students from diverse academic backgrounds mapping decision-making patterns.",
+    "description": "Set up a research forum to run video interviews. Over 1,000 conversations with students across different academic backgrounds, all mapped to decision-making patterns. The raw data became the foundation for three published papers.",
     "track": "research",
     "slug": "behavioral-psychology",
     "linkType": "case"
@@ -73,7 +73,7 @@
   {
     "year": "2021",
     "title": "Conversational Bot — T5 Model + Skinner's CBT",
-    "description": "Built a multilingual conversational bot using T5, grounded in B.F. Skinner's cognitive behavior theory. Interpreted emotional and linguistic cues to generate behavioral statistical reports. Named 'Speak It Out.'",
+    "description": "Built 'Speak It Out', a multilingual bot using T5 grounded in Skinner's CBT framework. It reads emotional and linguistic patterns in user input and returns a behavioral report. Submitted to SIH for funding.",
     "track": "tech"
   },
   {
@@ -104,7 +104,7 @@
   {
     "year": "2021",
     "title": "AI / ML Freelancer — Active Period",
-    "description": "Active freelance period handling NLP, ML, and data pipeline projects for independent clients. Delivered the Trek Recommendation System among other engagements.",
+    "description": "Active freelance stretch handling NLP, ML, and data pipeline work for independent clients.",
     "date": "Aug 2021 – May 2022",
     "track": "work",
     "slug": "workex",
@@ -119,7 +119,7 @@
   {
     "year": "2022",
     "title": "AI Research Intern — C-DAC Pune",
-    "description": "Final Year Project at C-DAC Applied AI Group (Strategic Projects Group, Ministry of Electronics & IT, Govt. of India), sponsored by Dr. Krishnanjan Bhattacharjee (Joint Director, SPG) after IdeaIn10 caught his attention. Researched Domain Identification for Named Entity Disambiguation using DistilBERT + Zero-Shot classification across 6 domains on an 11,000+ dataset. Achieved 99.24% domain classification accuracy and 93% NER. Built an autonomous data pipeline and a Streamlit web interface.",
+    "description": "Final Year Project sponsored by C-DAC Applied AI Group (Strategic Projects Group, Ministry of Electronics & IT, Govt. of India), under Dr. Krishnanjan Bhattacharjee (Joint Director, SPG). Researched Domain Identification for Named Entity Disambiguation using DistilBERT + Zero-Shot classification across 6 domains on an 11,000+ dataset. Achieved 99.24% domain classification accuracy and 93% NER. Built an autonomous data pipeline and a Streamlit web interface.",
     "date": "Jan 2022 – Jun 2022",
     "track": "work",
     "slug": "workex",
@@ -128,7 +128,7 @@
   {
     "year": "2022",
     "title": "SIH Grant — INR ₹1,00,000 for Speak It Out",
-    "description": "Smart India Hackathon 2022: presented Speak It Out at the national level. Secured a Government of India innovation grant of INR 1,00,000 to further develop the conversational empathy model.",
+    "description": "Smart India Hackathon 2022: presented Speak It Out. Secured a Government of India innovation grant of INR 1,00,000 to further develop the conversational empathy model.",
     "date": "Mar 2022",
     "track": "milestone"
   },
@@ -151,7 +151,7 @@
   {
     "year": "2022",
     "title": "Trek Recommendation System — Freelance Project",
-    "description": "Delivered a freelance ML recommendation system covering 208+ Indian treks using Flask, scikit-learn KNN, and REST API. Sub-second response time. Real-world ML deployment outside academic contexts.",
+    "description": "Delivered the Trek Recommendation System as a freelance project. 208+ Indian treks, content-based filtering with scikit-learn KNN, Flask REST API, under a second on lookup. First ML system I shipped after college.",
     "track": "tech",
     "slug": "trek",
     "linkType": "project"
@@ -168,7 +168,7 @@
   {
     "year": "2022",
     "title": "Joined Synpulse — Trainee Analyst",
-    "description": "Joined Synpulse full-time as Trainee Analyst. Designed a mutual fund system for a leading private bank (Pat on the Back award). Recognised as Star Performer for Syninformation filter work. One of 6 selected across India for internal data analytics certification.",
+    "description": "Joined Synpulse full-time as Trainee Analyst. Designed a mutual fund system design for a leading private bank and got a Pat on the Back award for it. Recognized as Star Performer for building the data pipeline and UI for Syninformation platform. One of 6 selected across India for Synpulse's internal data analytics certification.",
     "date": "Aug 2022 – Aug 2023",
     "track": "work",
     "slug": "workex",
@@ -177,7 +177,7 @@
   {
     "year": "2023",
     "title": "Synpulse — Promoted to Analyst",
-    "description": "Promoted to Analyst at Synpulse. Managed institutional client consulting for a global financial institution — aligned ICM systems with front-office requirements. Worked on Southeast Asian core banking project.",
+    "description": "Promoted to Analyst. Took on institutional client consulting for a global bank, mostly ICM systems design and front-office automated system implementation. Moved to a Southeast Asian core banking project as a backend and infrastructure engineer.",
     "date": "Sep 2023 – Dec 2024",
     "track": "work",
     "slug": "workex",
@@ -195,7 +195,7 @@
   {
     "year": "2023",
     "title": "E-commerce Behavioral Framework",
-    "description": "Extended the IoB dataset into a commercial intelligence framework — segmenting by platform × demographic, identifying November (Diwali) as a 13.64% annual order peak, and mapping gender-specific discovery vs. intent signals.",
+    "description": "Took the IoB survey data further. Segmented by platform and demographic, mapped Diwali in November as a 13.64% annual order peak, and traced how gender shapes discovery versus purchase intent.",
     "track": "research",
     "slug": "e-commerce",
     "linkType": "case"
@@ -203,7 +203,7 @@
   {
     "year": "2023",
     "title": "ONCP Vision — Protocol for Content Distribution",
-    "description": "Formulated the Open Network for Content Platform concept after observing father's cable business being structurally bypassed by Jio+Airtel vertical integration. Proposed a five-layer DPI protocol — not a platform, but infrastructure.",
+    "description": "The ONCP concept came from watching my father's cable business for years. Institutions didn't outcompete LCOs, they bypassed them by owning the entire stack. ONCP is a concept response to that: a five-layer DPI protocol that gives LCOs an infrastructure role rather than asking them to compete at the application layer.",
     "track": "research",
     "slug": "oncp",
     "linkType": "case"
@@ -211,7 +211,7 @@
   {
     "year": "2024",
     "title": "Synpulse — Promoted to Senior Analyst",
-    "description": "Promoted to Senior Analyst at Synpulse. Leading large-scale financial system design for global institutions and private banks. Remote.",
+    "description": "Promoted to Senior Analyst. Backend and infrastructure engineering at the core, but the role operates across multiple interface levels — system design, client consulting, and delivery. Working across 3 projects under one client simultaneously, mostly in financial systems for global banks and private wealth clients.",
     "date": "Dec 2024 – Present",
     "track": "work",
     "slug": "workex",
@@ -220,7 +220,7 @@
   {
     "year": "2024",
     "title": "ONCP Architecture Refined",
-    "description": "Detailed the five protocol layers: Open Content Network API, Shared National CDN, Device-Neutral OS, Aadhaar+UPI Identity, and edge AI compute. Reframed local cable operators from dumb pipes to sovereign infrastructure nodes.",
+    "description": "Fleshed out the five layers: Open Content Network API, Shared National CDN, Device-Neutral OS, Aadhaar+UPI identity, and edge compute. The argument is that LCOs aren't dumb pipes. They're infrastructure nodes that lack a protocol to operate as one. That's the gap ONCP is designed to fill.",
     "track": "research",
     "slug": "oncp",
     "linkType": "case"
@@ -234,7 +234,7 @@
   {
     "year": "2025",
     "title": "Sansad — Indian Election Strategy Game (WIP)",
-    "description": "Designing a browser strategy game simulating Indian Lok Sabha elections across 543 constituencies and 5,000+ candidates. AI advisor and 7-turn campaign mechanics. Active development.",
+    "description": "Building a browser strategy game set in the 2024 Indian General Election. 543 constituencies, 5,000+ candidates, an AI advisor that comments on every move, 7-turn campaign. Closest I've got to the intersection of politics, data, and game design.",
     "track": "tech",
     "slug": "sansad",
     "linkType": "project"
@@ -242,7 +242,7 @@
   {
     "year": "2026",
     "title": "TraceAI — Agentic Research Platform (Active)",
-    "description": "Building TraceAI — an ontology graph powered by Groq LLaMA 3.3 70B with per-node AI reasoning, voice input via Whisper, and a live ReactFlow canvas. Agentic deep research platform. Active development.",
+    "description": "Building TraceAI. It maps research as an ontology graph so concepts, hypotheses, evidence, and issues all connect explicitly. Powered by Groq LLaMA 3.3 70B with per-node reasoning threads, voice input via Whisper, and a live ReactFlow canvas. The point is the AI can't drift from what you've actually built.",
     "track": "tech",
     "slug": "traceai",
     "linkType": "project"

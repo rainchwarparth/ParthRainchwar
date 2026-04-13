@@ -2,7 +2,7 @@
   {
     "year": "January 2021",
     "title": "Survey Design \u2014 Platform-Behavior Mapping",
-    "description": "While designing the IoB research paper, a parallel question emerged: the same 1,500-response dataset could reveal direct commercial patterns. The 30-question survey was deliberately scoped to capture not just platform usage but product categories, purchase frequencies, and brand interaction types \u2014 making it useful for both behavioral research and e-commerce intelligence.",
+    "description": "The same 30-question consumer behavior survey used for the IoB research paper had enough commercial specificity in it to be read separately. The questions captured not just platform usage but product categories, purchase frequencies, and brand interaction types — which made the dataset useful for e-commerce intelligence, not just behavioral research.",
     "tags": ["SURVEY DESIGN"],
     "attachment": { "label": "30-Question Consumer Behavior Survey", "type": "form" },
     "dataTable": {
@@ -45,7 +45,7 @@
     "attachment": {
       "label": "CRC Press \u2014 IoB Book Chapter",
       "type": "paper",
-      "href": "https://doi.org/10.1201/9781003388722"
+      "href": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003305170-4/analytical-study-consumer-social-behavioral-psychology-influence-online-purchasing-parth-rainchwar-rishikesh-mate-soham-wattamwar-aditya-gaisamudre-pratyush-jha-shilpa-sonawani"
     },
     "barChart": {
       "caption": "Purchase Influence by Time on Social Media",

@@ -11,6 +11,11 @@
         "end": "Present",
         "duration": "1 yr 4 mos",
         "location": "Remote",
+        "bullets": [
+          "Backend and infrastructure engineer across 3 projects under one client simultaneously — transaction systems, client-facing platforms, and core banking services for global banks and private wealth clients",
+          "Built system frameworks for wealth management products that required both technical delivery and understanding of how the client actually uses the system day to day",
+          "Working across multiple interface levels in the same engagement — architecture, implementation, and client-side consulting depending on what the project needs"
+        ],
         "skills": ["Microservices", "Avaloq", "Java", "Spring Boot", "Wealth Management", "Client Consulting", "Financial Systems", "Angular", "PostgreSQL", "Python", "Core Banking", "Analytics", "API Design", "System Architecture"]
       },
       {
@@ -20,6 +25,11 @@
         "end": "Dec 2024",
         "duration": "1 yr 4 mos",
         "location": "Remote",
+        "bullets": [
+          "Institutional client consulting for a global bank — ICM systems design and front-office automated system implementation",
+          "Moved to a Southeast Asian core banking project as a backend and infrastructure engineer, working on migration and stabilization of systems that run live transactions",
+          "Remote engagement across time zones, so client communication and technical delivery ran in parallel rather than in sequence"
+        ],
         "skills": ["Java", "Microservices", "Spring Boot", "Angular", "SQL", "Institutional Banking", "ICM Systems", "Core Banking", "Data Analytics", "Python", "Client Management", "Behavioral Research"]
       },
       {
@@ -30,9 +40,9 @@
         "duration": "1 yr 1 mo",
         "location": "Pune, India",
         "bullets": [
-          "Designed a mutual fund system for one of India's leading private banks — received 'Pat on the Back' award",
-          "Contributed to the Syninformation platform with filter functionality — recognized as Star Performer",
-          "Selected as one of 6 employees across India for an exclusive internal data visualization and analytics certification"
+          "Designed a mutual fund system for one of India's leading private banks and got a Pat on the Back award for it",
+          "Built data pipeline and UI for the Syninformation platform, got recognized as Star Performer that quarter",
+          "One of 6 employees across India picked for Synpulse's internal data visualization and analytics certification"
         ],
         "skills": ["Investment Banking", "Microservices", "Java", "Spring Boot", "Angular", "SQL", "Python", "Mutual Fund Systems", "Consumer Psychology", "System Design", "Data Visualization"]
       },
@@ -44,9 +54,9 @@
         "duration": "4 mos",
         "location": "Pune, India",
         "bullets": [
-          "Built the Business Radar dashboard using Angular, Spring Boot, SQL, and Python for Synpulse's Germany team",
-          "Earned BRv7 certification — awarded to a select few interns globally",
-          "Secured a Pre-Placement Offer converting directly to Trainee Analyst"
+          "Built the Business Radar dashboard in Angular, Spring Boot, SQL, and Python for Synpulse's Germany team",
+          "Earned BRv7 certification during the internship",
+          "Converted directly to Trainee Analyst via Pre-Placement Offer"
         ],
         "skills": ["AutoML", "Microservices", "Angular", "Spring Boot", "SQL", "Python", "Business Intelligence", "Data Visualization", "Dashboard Development"]
       }
@@ -65,8 +75,8 @@
         "location": "Maharashtra, India",
         "locationMode": "Remote",
         "bullets": [
-          "Delivered the Trek Recommendation System — ML-powered system covering 208+ treks using Flask + scikit-learn KNN",
-          "Worked on NLP and data pipeline projects for independent clients across research and product domains"
+          "Delivered the Trek Recommendation System, a content-based ML recommender covering 208+ treks using Flask and scikit-learn KNN",
+          "Worked on NLP and data pipeline projects for independent clients in research and product domains"
         ],
         "skills": ["Python", "R", "NLP", "scikit-learn", "Flask", "Machine Learning", "REST API", "Data Science", "Recommendation Systems", "MongoDB", "Feature Engineering"]
       }
@@ -85,10 +95,10 @@
         "location": "Pune, India",
         "locationMode": "On-site",
         "bullets": [
-          "Sponsored by Dr. Krishnanjan Bhattacharjee (Joint Director, SPG) after IdeaIn10 work drew his attention",
-          "Domain Identification for Named Entity Disambiguation — DistilBERT + Zero-Shot classification",
-          "Achieved 99.24% domain classification accuracy and 93% named entity recognition across 6 domains",
-          "Built an autonomous Selenium data pipeline producing 11,000+ labeled rows; deployed Streamlit web interface"
+          "Sponsored by Dr. Krishnanjan Bhattacharjee (Joint Director, SPG)",
+          "Worked on domain identification for named entity disambiguation using DistilBERT and zero-shot classification across 6 domains",
+          "99.24% domain classification accuracy and 93% NER on an 11,000+ row dataset",
+          "Built the data pipeline in Selenium and deployed a Streamlit interface for the team"
         ],
         "skills": ["NLP", "BERT", "DistilBERT", "Python", "Selenium", "Streamlit", "SpaCy", "Transformers", "Zero-Shot Classification", "Named Entity Recognition", "Software Development", "Data Pipeline"]
       }
@@ -107,9 +117,9 @@
         "location": "Pune, India",
         "locationMode": "On-site",
         "bullets": [
-          "Developed a MERN application for real-time cryptocurrency price tracking",
-          "Implemented filtering API and integrated MongoDB for efficient data management",
-          "Built the React frontend interface with a seamless and visually appealing UX"
+          "Built a MERN application for real-time cryptocurrency price tracking",
+          "Implemented the filtering API and wired up MongoDB for data management",
+          "Built and styled the React frontend"
         ],
         "skills": ["React", "Node.js", "MongoDB", "Redis", "Express.js", "REST API", "Software Development", "JavaScript"]
       }

@@ -11,7 +11,7 @@
     {
       "type": "overview",
       "heading": "What Is This?",
-      "body": "Sansad is a work-in-progress political simulation game built around the 2024 Indian General Election. You pick a real party and fight your way to 272 seats across 7 turns of campaign decisions. Every action has a cost, alliances are fragile, and an AI advisor comments on your strategy turn by turn.\n\nThis is a solo side project, not affiliated with any political party or institution. The goal is to make Indian politics legible and interesting — like a Civilization game but set inside the actual Lok Sabha framework.\n\nThe source is currently private while the game is under active development. A public release is planned."
+      "body": "Sansad is a political simulation game built around the 2024 Indian General Election. Pick a real party and fight your way to 272 seats across 7 turns of campaign decisions. Every move costs something, alliances fall apart, and an AI advisor comments on your position turn by turn.\n\nSolo side project, no party affiliation. Started it because I couldn't find a game that takes Indian electoral mechanics seriously — not as a theme, but as the actual system. The Civilization comparison holds: same resource management and coalition logic, but built on real 2024 Lok Sabha data.\n\nSource is currently private while the game is in development. Release planned."
     },
     {
       "type": "how-it-works",
@@ -50,27 +50,6 @@
           "url": "https://raw.githubusercontent.com/rainchwarparth/Sansad-Game/master/public/screenshots/B.jpeg",
           "caption": "End Game — full declared-seats ticker, alliance bloc breakdown, and final seat map"
         }
-      ]
-    },
-    {
-      "type": "capabilities",
-      "heading": "What's Built vs. What's Planned",
-      "capabilities": [
-        { "feature": "Party selection with real 2024 seat counts and alliance blocs", "status": "live" },
-        { "feature": "543-seat constituency map with polygon selection", "status": "live" },
-        { "feature": "5,000+ candidates with 30+ attributes each", "status": "live" },
-        { "feature": "Candidate defection and media backlash events", "status": "live" },
-        { "feature": "7-turn campaign with 12 action types", "status": "live" },
-        { "feature": "AI advisor commenting per turn", "status": "live" },
-        { "feature": "Alliance HQ with coalition management", "status": "live" },
-        { "feature": "Flash News modal at campaign start", "status": "live" },
-        { "feature": "State Assembly (Vidhan Sabha) elections", "status": "planned" },
-        { "feature": "Coalition government formation — ministries, confidence votes", "status": "planned" },
-        { "feature": "Economic policy layer — budgets, inflation shifting voter sentiment", "status": "planned" },
-        { "feature": "Multiplayer — turn-based online play across opposing parties", "status": "planned" },
-        { "feature": "Historical scenarios — 2019, 2014, 2009 elections", "status": "planned" },
-        { "feature": "Save/Load system and replay mode", "status": "planned" },
-        { "feature": "Mod support via external JSON config", "status": "planned" }
       ]
     },
     {

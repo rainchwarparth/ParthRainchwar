@@ -1,11 +1,11 @@
 {
   "name": "Parth Rainchwar",
-  "tagline": "Software Engineer & AI Researcher",
-  "positioning": "I build at the intersection of systems engineering and behavioral research — where data, scale, and human meaning converge.",
+  "tagline": "Software Engineer & Research Enthusiast",
+  "positioning": "I build systems and study people. The work sits where backend engineering meets behavioral research, usually around data and decision-making.",
 "about": [
-  "I work on systems that combine data, user behavior, and real-world constraints like scale, ambiguity, and time.",
-  "My experience spans backend engineering and product-level decision-making, where I’ve built and operated systems under practical limitations.",
-  "I actively study patterns in human decision-making and consumption using data, with a focus on how these insights can shape better systems."
+  "I work on systems that run under real constraints: scale, ambiguity, and time. Most of my engineering has been in financial services where the cost of getting it wrong is visible.",
+  "My experience spans backend engineering and product consulting, building and maintaining things in production for global institutions and private banks.",
+  "On the research side I study behavioral patterns — how people decide, consume, and respond to systems. That work led to published papers and shapes how I build."
 ],
   "email": "parthrainchwar@gmail.com",
   "linkedin": "https://linkedin.com/in/parthrainchwar",

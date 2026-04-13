@@ -12,8 +12,8 @@
   },
   {
     "year": "2020\u20132021",
-    "title": "Behavioral Theory as a Lens",
-    "description": "B.F. Skinner's Cognitive Behavioral Theory became my framework for understanding why people act the way they do \u2014 not just in therapy rooms but in everyday decisions around food, money, and digital life. Freud's psychodynamic lens added depth: the unconscious motivations behind consumer behavior, social media addiction, and herd mentality.",
+    "title": "Behavioral Theory — CBT and Freud",
+    "description": "B.F. Skinner's Cognitive Behavioral Theory gave me a structure for understanding decision-making in everyday contexts — food, money, digital behavior. Freud's psychodynamic perspective added a different layer: the unconscious motivations behind consumer behavior, social media use, and herd mentality.",
     "tags": ["CBT", "FREUD"]
   },
   {
@@ -24,7 +24,7 @@
     "attachment": {
       "label": "Economic Times \u2014 Domino's Data Breach Report",
       "type": "dataset",
-      "href": "https://economictimes.indiatimes.com/tech/technology/18-cr-orders-data-breach-of-dominos-india-on-dark-web-report/articleshow/82396820.cms"
+      "href": "https://indianexpress.com/article/technology/tech-news-technology/dominos-data-breach-name-address-other-details-of-over-18-crore-orders-leaked-7328416/"
     }
   },
   {
@@ -140,7 +140,7 @@
   },
   {    "year": "November 2022",
     "title": "Paper 2 Published \u2014 Nutritional Psychology, 98% Accuracy",
-    "description": "Post-pandemic, fast food consumption on campus had spiked. The 2018\u20132020 survey data collected from MIT-WPU students was ready for analysis. Decision Tree on sickness frequency hit 98%. Random Forest on BMI hit 96.53%. Pre-COVID, 50% ate healthy. Post-COVID, that rose to 83%+.",
+    "description": "Published in the Springer ICEI 2022 proceedings. The nutritional psychology paper analyzed dietary shifts in MIT-WPU engineering students across a 2018–2020 window — pre and post-COVID. Decision Tree on sickness frequency hit 98% accuracy. Random Forest on BMI hit 96.53%. Pre-COVID, 50% ate healthy. Post-COVID, that rose to 83%+.",
     "tags": ["PUBLISHED"],
     "attachment": {
       "label": "Springer Nature Singapore \u2014 ICEI 2022",
@@ -200,12 +200,12 @@
   {
     "year": "May 2023",
     "title": "Paper 3 Published \u2014 IoB Consumer Psychology",
-    "description": "The final synthesis. Three years of psychology study, Skinner's CBT, the Domino's behavioral signal, and two published papers converged into one question: how does digital behavior drive online purchasing? Adults (20\u201340) drove 72.36% of all orders. Instagram dominated at 75% average. Time on social media had a direct gradient effect \u2014 more time meant more purchases.",
+    "description": "The paper that brought the three-year track together. The 1,438-person pan-India survey on social media and purchasing behavior confirmed most of what the earlier work had pointed toward. Adults (20–40) drove 72.36% of all orders. Instagram dominated at 75% average. Time on social media had a direct gradient effect — more time correlated with more purchases.",
     "tags": ["PUBLISHED", "IoB"],
     "attachment": {
       "label": "CRC Press \u2014 Internet of Behaviors Book Chapter",
       "type": "paper",
-      "href": "https://doi.org/10.1201/9781003388722"
+      "href": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003305170-4/analytical-study-consumer-social-behavioral-psychology-influence-online-purchasing-parth-rainchwar-rishikesh-mate-soham-wattamwar-aditya-gaisamudre-pratyush-jha-shilpa-sonawani"
     },
     "dataTable": {
       "caption": "Paper 3 \u2014 Key Survey Statistics",
@@ -246,6 +246,6 @@
   {
     "year": "2023\u2013Present",
     "title": "One Narrative, Three Papers",
-    "description": "Looking back: a Yale psychology course during lockdown \u2192 Skinner's CBT \u2192 a data breach that made behavior visible \u2192 a 7-day survey on cognitive decision-making \u2192 a multi-year nutrition study that tracked a pandemic's effect on eating \u2192 a pan-India consumer behavior synthesis. Three papers. Three scales of human behavior. One through-line: psychology is data, and data can decode psychology."
+    "description": "The three-year arc from the Yale certification to the published IoB paper — cognitive decision-making (Springer IACC 2021), nutritional psychology (Springer ICEI 2022), and consumer behavior under the IoB framework (CRC Press 2023). Three separate surveys, three different scales of analysis, one consistent thread: behavioral data is measurable and interpretable with the right methodology."
   }
 ]

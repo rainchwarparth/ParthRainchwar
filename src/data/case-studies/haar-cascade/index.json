@@ -1,8 +1,8 @@
 {
   "slug": "haar-cascade",
   "title": "Face Recognition for Smart Voting",
-  "tagline": "A Haar Cascade + LBPH pipeline built to make democratic voting tamper-proof — one face, one vote, verified by computer vision",
-  "summary": "An IEEE-presented study applying computer vision to India's duplicate-vote problem. By combining Haar Cascade face detection with LBPH face recognition in a hybrid pipeline, the system authenticates individual voters biometrically before ballot access — translating a policy challenge into an engineering solution. Presented at Smart GENCON 2021, IEEE Pune Section.",
+  "tagline": "A computer vision pipeline built to make voting tamper-proof. One face, one vote, verified biometrically.",
+  "summary": "An IEEE-presented study applying computer vision to India's duplicate-vote problem. A Haar Cascade and LBPH hybrid pipeline that biometrically authenticates voters before ballot access. Presented at Smart GENCON 2021, IEEE Pune Section.",
   "themes": ["Computer Vision", "Face Recognition", "Biometrics", "Smart Voting", "OpenCV", "Machine Learning"],
   "spawnedFrom": null
 }

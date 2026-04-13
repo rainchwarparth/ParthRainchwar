@@ -2,7 +2,7 @@
   {
     "year": "2020",
     "title": "The Problem — India's Duplicate Vote Challenge",
-    "description": "In Indian elections, manual voter verification struggles to prevent impersonation and duplicate balloting at scale. The core question emerged: could face recognition replace the manual process? A biometric gate — verifying the voter's face before the ballot is cast — could enforce the One Person One Vote policy without human bottlenecks. This became the research charter.",
+    "description": "In Indian elections, manual voter verification struggles to prevent impersonation and duplicate balloting at scale. The question was whether face recognition could replace that manual gate. A biometric check before the ballot is cast would enforce one-person-one-vote without human bottlenecks.",
     "tags": ["Smart Voting", "Biometrics", "Problem Framing", "Democracy", "Security"]
   },
   {
@@ -86,7 +86,8 @@
     "tags": ["IEEE", "Published", "Conference", "Smart GENCON", "Pune"],
     "attachment": {
       "label": "IEEE Smart GENCON 2021 — Presentation Certificate",
-      "type": "certificate"
+      "type": "certificate",
+      "href": "https://ieeexplore.ieee.org/abstract/document/9645879"
     },
     "figures": [
       {

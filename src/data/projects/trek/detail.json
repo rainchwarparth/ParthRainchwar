@@ -1,8 +1,8 @@
 {
   "slug": "trek",
   "title": "Trek Recommendation System",
-  "tagline": "ML-Powered Trekking Destination Recommender",
-  "summary": "A machine learning-powered web application that recommends hiking and trekking destinations based on similar treks using content-based recommendation algorithms. Originally developed as a freelance project in 2022, open-sourced since. Features a clean search interface, 208+ trekking destinations, and a REST API for programmatic access.",
+  "tagline": "Trekking Destination Recommender",
+  "summary": "Built as a freelance project in March 2022 — a recommendation system for trekking destinations in India. Put in a trek you know and it returns 10 similar ones, ranked by cosine similarity across description vectors. 208+ treks in the database.",
   "year": "2022",
   "status": "complete",
   "repoUrl": "https://github.com/rainchwarparth/Treck-Recommendation-System-2022",
@@ -10,8 +10,8 @@
   "sections": [
     {
       "type": "overview",
-      "heading": "Project Overview",
-      "body": "A machine learning-powered web app that recommends trekking destinations based on what you already know you enjoy. You search for any trek from a database of 208+ destinations, and the system returns 10 personalised recommendations ranked by similarity.\n\nOriginally developed as a freelance project in March 2022. As of 2024, transitioned to a personal open-source project with full ownership. The codebase has been refactored, documented, and optimised for local development."
+      "heading": "Background",
+      "body": "You search for a trek you've done and the system returns 10 similar ones based on description content. Built on CountVectorizer + NearestNeighbors with cosine similarity — the core recommendation logic is about 30 lines.\n\nFreelance project from March 2022. Open-sourced in 2024 after the NDA expired. The codebase is refactored and documented if you want to run it locally."
     },
     {
       "type": "how-it-works",

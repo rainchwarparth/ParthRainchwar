@@ -1,8 +1,8 @@
 {
   "slug": "oncp",
-  "title": "ONCP — Open Network for Content Platform",
-  "tagline": "Telecom didn't expand — it vertically integrated the entire digital stack. ONCP is a DPI-layer response: protocol over platform, built underneath the duopoly, not against it",
-  "summary": "A personal vision for redefining digital distribution in India — born from watching a father's cable business being structurally bypassed, not outcompeted. Since Jio's disruption, telcos now own all five layers: network, content, device, application, and data. LCOs have been reduced to dumb pipes with zero leverage. ONCP proposes a five-layer open protocol stack (content delivery, shared infra, device neutrality, identity + billing, edge AI) that turns LCOs from legacy operators into sovereign infrastructure nodes — the same way UPI turned banks into rails, not gatekeepers. Inspired by ONDC and UPI. Not a startup. Not a deck. A direction I intend to spend years working toward.",
+  "title": "ONCP — Open Network for Content Protocol",
+  "tagline": "A personal framework for open infrastructure in India's telecom stack — starting with what happened to local cable operators after Jio",
+  "summary": "Started from watching my father's cable business get structurally bypassed — not outcompeted. Since Jio, telcos own all five layers: network, content, device, application, and data. LCOs became dumb pipes with no leverage anywhere in the stack. ONCP is a framework for a five-layer open protocol stack — content delivery, shared infra, device neutrality, identity and billing, edge AI — that gives LCOs a role in infrastructure the same way ONDC gave kirana stores a role in e-commerce. Inspired by ONDC and UPI. Not a startup pitch. A problem I keep coming back to.",
   "themes": ["Digital Public Infrastructure", "Open Protocols", "Local Cable Operators", "Vertical Integration", "Content Sovereignty", "India", "Policy Vision", "Decentralization", "Edge AI"],
   "spawnedFrom": null
 }

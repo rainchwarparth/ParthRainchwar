@@ -1,8 +1,8 @@
 {
   "slug": "traceai",
   "title": "TraceAI",
-  "tagline": "Deep Research, Without Hallucination",
-  "summary": "Most AI tools give you a confident-sounding answer and stop there. TraceAI treats that as the starting point. It maps knowledge as a structured graph — concepts, hypotheses, evidence, issues — and every AI response is grounded in what you've already established. It cannot fill gaps with guesses because you control the structure it reasons from.",
+  "tagline": "A structured graph for research, not a chat window",
+  "summary": "Built because I kept losing track of why I believed something during long research sessions. TraceAI maps a research problem as a graph — concepts, hypotheses, evidence, issues — and every AI interaction is scoped to a specific node with the full problem context visible. Nothing gets added to the graph without your approval.",
   "year": "2026",
   "status": "active",
   "repoUrl": "https://github.com/rainchwarparth/TraceAI-Public",
@@ -11,7 +11,7 @@
     {
       "type": "overview",
       "heading": "The Core Idea",
-      "body": "The problem with current AI research tools is that they optimize for sounding correct, not for being traceable. When you ask a question, you get an answer. When you ask where that answer comes from, you get another answer.\n\nTraceAI takes a different approach: knowledge is a graph, not a conversation. You define a problem statement — that becomes the root node. You explore concepts related to it. Each one becomes a typed node (concept, hypothesis, evidence, issue). The AI only suggests concepts that don't already exist in your graph — no repetition, no circular reasoning.\n\nEvery AI discussion is scoped to a specific node and is fully aware of the entire problem context. Structured responses — tables, comparisons, step-by-step breakdowns — are first-class citizens: pinnable research artifacts tied to specific nodes, not raw text buried in chat.\n\nThe result is a research session you can export, inspect, and hand to someone else who can follow your reasoning from root to leaf."
+      "body": "Ask a current AI research tool where its answer actually came from. You'll get another answer.\n\nTraceAI works differently: knowledge is a graph, not a conversation. You define a problem statement — that becomes the root node. You explore concepts related to it. Each one becomes a typed node (concept, hypothesis, evidence, issue). The AI only suggests concepts that don't already exist in your graph — no repetition, no circular reasoning.\n\nEvery AI discussion is scoped to a specific node and has access to the full problem context. Structured responses — tables, comparisons, step-by-step breakdowns — are pinnable research artifacts tied to specific nodes, not raw text buried in chat.\n\nThe result is a research session you can export, re-enter, and share with someone who can trace exactly how you got there."
     },
     {
       "type": "screenshots",
@@ -50,27 +50,6 @@
       ]
     },
     {
-      "type": "capabilities",
-      "heading": "Current Capabilities",
-      "capabilities": [
-        { "feature": "Ontology graph (visual, draggable, edge-labelled)", "status": "live" },
-        { "feature": "AI concept exploration (LLaMA 3.3 70B via Groq)", "status": "live" },
-        { "feature": "Per-node AI discussion threads with full context", "status": "live" },
-        { "feature": "Structured response cards (tables, lists, comparisons, steps)", "status": "live" },
-        { "feature": "Pinnable research artifacts", "status": "live" },
-        { "feature": "Voice input for problem statement and queries (Groq Whisper)", "status": "live" },
-        { "feature": "Undo/redo (30-step snapshot history)", "status": "live" },
-        { "feature": "Full project export to JSON", "status": "live" },
-        { "feature": "Keyboard-first navigation + command palette", "status": "live" },
-        { "feature": "Multi-agent architecture (parallel specialised agents)", "status": "in-design" },
-        { "feature": "Persistent storage (survive page refresh)", "status": "planned" },
-        { "feature": "Source citation linking on nodes", "status": "planned" },
-        { "feature": "Shareable read-only graph URLs", "status": "planned" },
-        { "feature": "Multi-user collaboration on a shared graph", "status": "planned" },
-        { "feature": "PDF / Markdown report export from ontology", "status": "planned" }
-      ]
-    },
-    {
       "type": "tech-stack",
       "heading": "Technical Stack",
       "techStack": ["Next.js 16 (App Router)", "TypeScript", "Groq — LLaMA 3.3 70B", "Groq Whisper large-v3-turbo", "ReactFlow", "Zustand", "Tailwind CSS v4"]
@@ -91,7 +70,7 @@
     {
       "type": "collaboration",
       "heading": "Open to Collaboration",
-      "body": "This is an early-stage project with a clear direction and real ambition. I'm open to collaborating with people who want to help build something that matters — not just tinker.",
+      "body": "The core works. The harder questions — around knowledge representation, context scaling, and what a useful research session actually looks like — are still open. If you work in any of these areas:",
       "backgrounds": [
         "Knowledge representation / ontology engineering — RDF, OWL, knowledge graphs, or similar",
         "AI/ML with a focus on grounding and factuality — RAG systems, citation networks, hallucination detection",

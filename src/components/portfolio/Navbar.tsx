@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowLeft } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import type { NavLink } from "@/data/types";
 
@@ -74,16 +74,31 @@ const Navbar = ({ links }: NavbarProps) => {
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="text-foreground font-semibold text-lg tracking-tight"
-        >
-          PR
-        </a>
+        <div className="flex items-center gap-1">
+          {!isHome && (
+            <button
+              onClick={() => navigate(-1)}
+              className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+              aria-label="Go back"
+            >
+              <ArrowLeft className="w-4 h-4" />
+            </button>
+          )}
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              if (isHome) {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              } else {
+                navigate("/");
+              }
+            }}
+            className="text-foreground font-semibold text-lg tracking-tight"
+          >
+            PR
+          </a>
+        </div>
 
         {/* Desktop */}
         <ul className="hidden md:flex items-center gap-5">

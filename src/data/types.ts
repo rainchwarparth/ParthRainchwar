@@ -152,6 +152,7 @@ export interface CaseStudyMeta {
   tagline: string;
   summary: string;
   themes: string[];
+  highlight?: string;
   spawnedFrom?: { slug: string; label: string };
 }
 

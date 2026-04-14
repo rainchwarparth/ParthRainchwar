@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import ScrollToTop from "./components/portfolio/ScrollToTop";
+import ScrollToTopFAB from "./components/portfolio/ScrollToTopFAB";
 import Index from "./pages/Index";
 import CaseStudy from "./pages/CaseStudy";
 import Certificates from "./pages/Certificates";
@@ -12,6 +13,7 @@ const App = () => (
   <>
     <BrowserRouter>
       <ScrollToTop />
+      <ScrollToTopFAB />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/case/:slug" element={<CaseStudy />} />

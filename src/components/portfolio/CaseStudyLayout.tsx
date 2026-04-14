@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ExternalLink, GitBranch } from "lucide-react";
@@ -18,8 +19,25 @@ export default function CaseStudyLayout({
   next,
   spawnedChildren,
 }: CaseStudyLayoutProps) {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrolled = window.scrollY;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(total > 0 ? (scrolled / total) * 100 : 0);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <main className="min-h-screen bg-background">
+      {/* Reading progress bar */}
+      <div
+        className="fixed top-0 left-0 z-50 h-0.5 bg-amber-500 transition-all duration-150"
+        style={{ width: `${progress}%` }}
+      />
       <div className="pt-20 pb-24 px-6 max-w-3xl mx-auto">
         {/* ── Spawned-from lineage ────────────── */}
         {study.spawnedFrom && (
@@ -64,6 +82,42 @@ export default function CaseStudyLayout({
           <p className="mt-4 text-muted-foreground leading-relaxed">
             {study.summary}
           </p>
+        </motion.div>
+
+        {/* ── Key Findings box ──────────────── */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25, duration: 0.5 }}
+          className="mt-10 rounded-xl border border-amber-200 bg-amber-50/50 p-5"
+        >
+          <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 mb-3">
+            At a glance
+          </p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {study.themes.map((t) => (
+              <span
+                key={t}
+                className="text-xs px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-medium"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+          {study.papers.length > 0 && (
+            <div className="flex items-center gap-1.5 text-sm text-amber-800">
+              <span className="font-semibold tabular-nums">{study.papers.length}</span>
+              <span className="text-amber-600">
+                {study.papers.length === 1 ? "paper" : "papers"} published
+              </span>
+              {study.papers[0]?.publisher && (
+                <>
+                  <span className="text-amber-400 mx-1">·</span>
+                  <span className="text-amber-700 italic">{study.papers[0].publisher}</span>
+                </>
+              )}
+            </div>
+          )}
         </motion.div>
 
         {/* ── Timeline ───────────────────────── */}

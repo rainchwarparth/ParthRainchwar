@@ -100,9 +100,10 @@ const Navbar = ({ links }: NavbarProps) => {
                 router.push("/");
               }
             }}
-            className="text-foreground font-semibold text-lg tracking-tight"
+            className="flex items-center hover:opacity-80 transition-opacity"
+            aria-label="Go home"
           >
-            PR
+            <img src="/logo.svg" alt="PR Logo" className="w-6 h-6" />
           </a>
         </div>
 

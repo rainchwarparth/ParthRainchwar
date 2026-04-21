@@ -6,10 +6,13 @@ import Navbar from "@/components/portfolio/Navbar";
 import Footer from "@/components/portfolio/Footer";
 import { navLinks } from "@/lib/navLinks";
 
+// Revalidate every 1 hour in dev, cache aggressively
+export const revalidate = 3600;
+
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -21,7 +24,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: ProjectPageProps): Promise<Metadata> {
-  const project = getBuilderProject(params.slug);
+  const resolvedParams = await params;
+  const project = getBuilderProject(resolvedParams.slug);
 
   if (!project) {
     return {
@@ -37,7 +41,7 @@ export async function generateMetadata({
       title: `${project.title} | Technical Project`,
       description: project.tagline,
       type: "article",
-      url: `https://parthrainchwar.vercel.app/project/${params.slug}`,
+      url: `https://parthrainchwar.vercel.app/project/${resolvedParams.slug}`,
       images: [
         {
           url: "/og-image.png",
@@ -56,8 +60,9 @@ export async function generateMetadata({
   };
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = getBuilderProject(params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const resolvedParams = await params;
+  const project = getBuilderProject(resolvedParams.slug);
 
   if (!project) {
     notFound();

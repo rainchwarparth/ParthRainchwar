@@ -6,10 +6,13 @@ import Navbar from "@/components/portfolio/Navbar";
 import Footer from "@/components/portfolio/Footer";
 import { navLinks } from "@/lib/navLinks";
 
+// Revalidate every 1 hour in dev, cache aggressively
+export const revalidate = 3600;
+
 interface CaseStudyPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -21,7 +24,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: CaseStudyPageProps): Promise<Metadata> {
-  const study = getCaseStudy(params.slug);
+  const resolvedParams = await params;
+  const study = getCaseStudy(resolvedParams.slug);
 
   if (!study) {
     return {
@@ -37,7 +41,7 @@ export async function generateMetadata({
       title: `${study.title} | Research Case Study`,
       description: study.summary,
       type: "article",
-      url: `https://parthrainchwar.vercel.app/case/${params.slug}`,
+      url: `https://parthrainchwar.vercel.app/case/${resolvedParams.slug}`,
       images: [
         {
           url: "/og-image.png",
@@ -56,9 +60,10 @@ export async function generateMetadata({
   };
 }
 
-export default function CaseStudyPage({ params }: CaseStudyPageProps) {
-  const idx = caseStudies.findIndex((cs) => cs.slug === params.slug);
-  const study = getCaseStudy(params.slug);
+export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
+  const resolvedParams = await params;
+  const idx = caseStudies.findIndex((cs) => cs.slug === resolvedParams.slug);
+  const study = getCaseStudy(resolvedParams.slug);
 
   if (!study) {
     notFound();

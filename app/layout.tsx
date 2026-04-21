@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Parth Rainchwar - Software Engineer, Systems Architect, and Behavioral AI Researcher. Explore work experience, research projects, and technical expertise.",
   metadataBase: new URL("https://parthrainchwar.vercel.app"),
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
